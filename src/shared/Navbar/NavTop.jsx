@@ -5,11 +5,11 @@ import { IoMdLocate } from "react-icons/io";
 import { AiOutlineSearch } from "react-icons/ai";
 import { AiFillCaretDown } from "react-icons/ai";
 import { AiOutlineShoppingCart } from "react-icons/ai";
-import { AiOutlineMenu } from "react-icons/ai";
+
 
 function Navtop() {
   return (
-    <div className="nav__top h-[60px] flex bg-primary items-center  justify-center">
+    <div className="nav__top h-[60px] flex bg-primary items-center  justify-center" id="top">
       {/* navigation left side  */}
       <div className="nav__left flex ">
         <div className="logo py-5 mx-3 cursor-pointer  ">

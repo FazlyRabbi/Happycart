@@ -3,25 +3,49 @@ import { Link } from "react-router-dom";
 import NavTop from "./NavTop";
 import { AiOutlineMenu } from "react-icons/ai";
 
-import "./nav.css";
-
 function Navbar() {
   const NavItems = (
-    <>
-      <a>
-        <div className="flex justify-center items-center">
-          <AiOutlineMenu className="mr-2 text-[20px]"/>
-          <span>All</span>
-        </div>
-      </a>
-      <a>Today's Deals</a>
-      <a>Customer Service</a>
-      <a>Gifts to Give</a>
-      <a>Gift Cards</a>
-      <a>Sell on Happycart</a>
-      <a>10:00:00AM</a>
-      <a>Shop Father's Day Gifts</a>
-    </>
+    <ul className="flex space-x-7 ml-3">
+      <li>
+        {" "}
+        <a href="#" className="  hover:outline outline-1  outline-offset-4  ">
+          <span className=" inline-block">
+            <AiOutlineMenu className="mr-2 text-[20px]  inline-block   " />
+            All
+          </span>
+        </a>
+      </li>
+      <li>
+        <a href="#" className=" hover:outline outline-1  outline-offset-4 ">
+          Today's Deals
+        </a>
+      </li>
+      <li>
+        <a href="#" className=" hover:outline outline-1  outline-offset-4 ">
+          Customer Service
+        </a>
+      </li>
+      <li>
+        <a href="#" className=" hover:outline outline-1  outline-offset-4 ">
+          Gifts to Give
+        </a>
+      </li>
+      <li>
+        <a href="#" className=" hover:outline outline-1  outline-offset-4 ">
+          Gift Cards
+        </a>
+      </li>
+      <li>
+        <a href="#" className=" hover:outline outline-1  outline-offset-4 ">
+          Sell on Happycart
+        </a>
+      </li>
+      <li>
+        <a href="#" className=" hover:outline outline-1  outline-offset-4 ">
+          Shop Father's Day Gifts
+        </a>
+      </li>
+    </ul>
   );
 
   return (
