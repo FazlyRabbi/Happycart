@@ -1,0 +1,39 @@
+.slider {
+  scrollbar-color: red green;
+}
+
+.slider__controller {
+  opacity: 0;
+  transition: ease-in-out 0.6s;
+}
+
+.slider:hover .slider__controller {
+  opacity: 1;
+}
+
+.arrow {
+  background: rgba(255, 255, 255, 0.767);
+  transition: ease-in-out 0.6s;
+}
+
+.arrow:hover {
+  background: #fff;
+}
+
+
+.slide__items::-webkit-scrollbar {
+  width: 10px;
+}
+
+.slide__items::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+  background-color: #b2b2b4;
+}
+
+
+/* .slider__wrapper{
+   overflow-x: hidden;
+}
+ */

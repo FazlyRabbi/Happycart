@@ -9,7 +9,7 @@ import box from "../../../asstes/img/box.jpg";
 
 function Grossary() {
   return (
-    <div className="banner__card--1 grid grid-cols-4 gap-4  justify-items-center container mx-auto">
+    <div className="banner__card--1 grid grid-cols-4 gap-4  justify-items-center container mx-auto mt-7">
       <div className="card rounded-none  w-[340px] bg-base-100  p-5">
         <h2 className="card-title text-[21px] py-4">Gaming accessories</h2>
         <div className="productsCategory text-[12px]">

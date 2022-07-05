@@ -5,10 +5,14 @@ import { AiOutlineMenu } from "react-icons/ai";
 
 function Navbar() {
   const NavItems = (
-    <ul className="flex space-x-7 ml-3">
-      <li>
+    <ul className="flex space-x-7 ml-2">
+      <li className="  ">
         {" "}
-        <a href="#" className="  hover:outline outline-1  outline-offset-4  ">
+        <a
+          href="#"
+          className=" border border-transparent
+              hover:border-white rounded-sm p-2 "
+        >
           <span className=" inline-block">
             <AiOutlineMenu className="mr-2 text-[20px]  inline-block   " />
             All
@@ -16,32 +20,56 @@ function Navbar() {
         </a>
       </li>
       <li>
-        <a href="#" className=" hover:outline outline-1  outline-offset-4 ">
+        <a
+          href="#"
+          className=" border border-transparent
+              hover:border-white p-2 rounded-sm"
+        >
           Today's Deals
         </a>
       </li>
       <li>
-        <a href="#" className=" hover:outline outline-1  outline-offset-4 ">
+        <a
+          href="#"
+          className=" border border-transparent
+              hover:border-white p-2    rounded-sm"
+        >
           Customer Service
         </a>
       </li>
       <li>
-        <a href="#" className=" hover:outline outline-1  outline-offset-4 ">
+        <a
+          href="#"
+          className=" border border-transparent
+              hover:border-white p-2   rounded-sm "
+        >
           Gifts to Give
         </a>
       </li>
       <li>
-        <a href="#" className=" hover:outline outline-1  outline-offset-4 ">
+        <a
+          href="#"
+          className=" border border-transparent
+              hover:border-white p-2  rounded-sm "
+        >
           Gift Cards
         </a>
       </li>
       <li>
-        <a href="#" className=" hover:outline outline-1  outline-offset-4 ">
+        <a
+          href="#"
+          className=" border border-transparent
+              hover:border-white p-2   rounded-sm"
+        >
           Sell on Happycart
         </a>
       </li>
       <li>
-        <a href="#" className=" hover:outline outline-1  outline-offset-4 ">
+        <a
+          href="#"
+          className=" border border-transparent
+              hover:border-white p-2 rounded-sm"
+        >
           Shop Father's Day Gifts
         </a>
       </li>

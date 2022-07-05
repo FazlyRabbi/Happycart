@@ -16,3 +16,10 @@
   background: none !important;
   outline: 1px solid red;
 }
+
+.swiper-button-prev{
+  display: none !important;
+  background-color: aqua;
+}
+
+

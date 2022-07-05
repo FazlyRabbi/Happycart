@@ -11,13 +11,13 @@ module.exports = {
 
           secondary: "#FF8500",
 
-          accent: "#007084",
+          accent: "#008296",
 
           neutral: "#EAEDED",
 
           "base-100": "#FFFFFF",
 
-          info: "#00A163",
+          info: "#323232",
 
           success: "#F7F7F7",
 
@@ -30,3 +30,5 @@ module.exports = {
   },
   plugins: [require("daisyui")],
 };
+
+  
