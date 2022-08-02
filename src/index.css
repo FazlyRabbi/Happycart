@@ -8,7 +8,7 @@
     url("./asstes/fonts/AmazonEmber/AmazonEmber_Rg.ttf") format("truetype");
 }
 
-.carousel.carousel-slider .control-arrow {
+/* .carousel.carousel-slider .control-arrow {
   bottom: 320px !important;
 }
 
@@ -17,9 +17,6 @@
   outline: 1px solid red;
 }
 
-.swiper-button-prev{
-  display: none !important;
-  background-color: aqua;
-}
+ */
 
 

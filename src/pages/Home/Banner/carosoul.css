@@ -1,4 +1,4 @@
-.slick-arrow.slick-prev,
+/* .slick-arrow.slick-prev,
 .slick-arrow.slick-next {
   display: flex;
   width: 50px;
@@ -15,6 +15,7 @@
 .slick-prev,
 .slick-next {
   top: 24%;
+
 }
 .slick-prev {
   left: 0;
@@ -42,4 +43,4 @@
 .slick-prev::before,
 .slick-next::before {
   display: none;
-}
+} */

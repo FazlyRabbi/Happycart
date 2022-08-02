@@ -169,18 +169,16 @@ function BannerCategory() {
             Shop now
           </span>
         </div>
-
-        <div className="flex flex-col items-center">
-          <div className="card  w-[340px] rounded-none bg-base-100  p-5 flex items-center">
-            <h2 className="card-title text-[21px] py-4  block ">
-              Sign in for the best experience
-            </h2>
-            <button className="bg-primary   w-72 p-2 mb-12 mt-1 rounded-xl">
-              Sign in securely
-            </button>
-            <img src={box} alt="box" />
-          </div>
+        <div className="card rounded-none bg-base-100 w-[340px]  p-5">
+          <h2 className="card-title text-[21px] py-4">Cosmatics</h2>
+          <img src={"https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Beauty_1x._SY304_CB432774351_.jpg"} alt="dress" />
+          <span className="card-title text-[13px] mt-10 text-accent cursor-pointer py2">
+            Shop now
+          </span>
         </div>
+
+   
+        
       </div>
     </div>
   );

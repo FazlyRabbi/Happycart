@@ -9,22 +9,28 @@ import PopularProductsInPc from "./PopularProducts/PopularProductsInPc";
 import BottomSignIn from "./BottomSignIn/BottomSignIn";
 import BackToTop from "./BackToTop";
 import Footer from "../../shared/Footer/Footer";
+import HndSign from "../../shared/HndSign/HndSign";
+import Sidebar from "../../shared/Sidebar/Sidebar";
+import SliderMain from "../Components/SliderMain/SliderMain"
 
 function Home() {
   return (
     <div className="bg-neutral">
+      <Sidebar />
       <Navbar />
-      <div className="container mx-auto">
+      {/* <div className="container mx-auto">
         <Banner />
         <PopularProductsInPc />
         <PopularProductsInBeauty />
         <Grossary />
         <TopSellersInToys />
         <TopSellerInBook />
-      </div>
-      <BottomSignIn />
+      </div> */}
+
+      {/* <BottomSignIn />
       <BackToTop />
       <Footer />
+      <SliderMain/> */}
     </div>
   );
 }
