@@ -12,20 +12,22 @@ import Footer from "../../shared/Footer/Footer";
 import HndSign from "../../shared/HndSign/HndSign";
 import Sidebar from "../../shared/Sidebar/Sidebar";
 import SliderMain from "../Components/SliderMain/SliderMain"
+import SingleProduct from "./SingleProduct/SingleProduct";
 
 function Home() {
   return (
-    <div className="bg-neutral">
+    <div className="">
       <Sidebar />
       <Navbar />
-      {/* <div className="container mx-auto">
-        <Banner />
+      <SingleProduct />
+      <div className="container mx-auto">
+        {/* <Banner />
         <PopularProductsInPc />
         <PopularProductsInBeauty />
         <Grossary />
         <TopSellersInToys />
-        <TopSellerInBook />
-      </div> */}
+        <TopSellerInBook /> */}
+      </div>
 
       {/* <BottomSignIn />
       <BackToTop />
