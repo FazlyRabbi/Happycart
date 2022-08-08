@@ -27,7 +27,7 @@ function ProductDescription() {
                 <button className='bg-blue-400 mt-[20px] text-black  px-4' onClick={() => setShow(!show)}>{show ? "Hide" : "Show"}</button>
                </div>
                <div className='md:col-span-4 mt-[50px]'>
-                <div className='bg-gray-800 rounded-md mb-3 w-full h-[200px] md:h-[80%]'>
+                <div className='bg-gray-800 rounded-md mb-3 w-full h-[200px] max-h-[250px]'>
 
                 </div>
             <div className="flex justify-end">
