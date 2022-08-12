@@ -2,7 +2,7 @@
 
 .sideNav {
   max-width: 350px;
-  width: 85%;
+  width: 80%;
   overflow-y: scroll;
   height: 100%;
   position: fixed;
@@ -63,7 +63,7 @@ a:active {
   position: absolute;
   top: 0;
   left: 0;
-  margin-left: 370px;
+  margin-left: 350px;
   color: #fff;
   font-size: 50px;
   cursor: pointer;
