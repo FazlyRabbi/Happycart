@@ -26,9 +26,10 @@ function Home() {
         <Grossary />
         <TopSellersInToys />
         <TopSellerInBook />
-      <BottomSignIn />
-      <BackToTop />
-      <Footer />
+        <BottomSignIn />
+        <BackToTop />
+        <Footer />
+      </div>
     </div>
   );
 }
