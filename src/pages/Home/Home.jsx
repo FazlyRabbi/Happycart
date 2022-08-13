@@ -23,18 +23,18 @@ function Home() {
       {/* <SingleProduct /> */}
       {/* <SinglePage /> */}
       <div className="container mx-auto">
-        {/* <Banner />
+        <Banner />
         <PopularProductsInPc />
         <PopularProductsInBeauty />
         <Grossary />
         <TopSellersInToys />
-        <TopSellerInBook /> */}
+        <TopSellerInBook />
       </div>
 
-      {/* <BottomSignIn />
+      <BottomSignIn />
       <BackToTop />
       <Footer />
-      <SliderMain/> */}
+      <SliderMain />
     </div>
   );
 }
