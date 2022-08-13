@@ -7,42 +7,6 @@ const CompanyOverview = () => {
         <h1 className="uppercase font-bold text-xl">Company overview</h1>
         <p className="text-xl">Company Album</p>
       </div>
-      {/* <div className="grid lg:grid-cols-6 grid-cols-3 bg-gray-100 p-0.5">
-        <div>
-          <h1 className="border-2 border-gray-200 py-2 px-4 text-lg font-semibold">
-            Buniness Type
-          </h1>
-          <h1 className="border-2 border-gray-200 py-2 px-4 text-lg font-semibold">
-            Buniness Product
-          </h1>
-          <h1 className="border-2 border-gray-200 py-2 px-4 text-lg font-semibold">
-            Total Annual Revinue
-          </h1>
-          <h1 className="border-2 border-gray-200 py-2 px-4 text-lg font-semibold">
-            Certifications
-          </h1>
-          <h1 className="border-2 border-gray-200 py-2 px-4 text-lg font-semibold">
-            Partents
-          </h1>
-          <h1 className="border-2 border-gray-200 py-2 px-4 text-lg font-semibold">
-            Main Markets
-          </h1>
-        </div>
-        <div className="lg:col-span-2 col-span-2 bg-white">
-          <h1 className="border-t-2 border-b-2 border-gray-200 py-2 px-4 text-lg font-normal">
-            Trading Company
-          </h1>
-          <h1 className="border-t-2 border-b-2 border-gray-200 py-2 px-4 text-lg font-normal underline">
-            Phone Case, Airpods Case, Smart watch strap, Smart Watch Speackers
-          </h1>
-          <h1 className="border-t-2 border-b-2 border-gray-200 py-2 px-4 text-lg font-normal ">
-            US$10 Million - US$50 Million
-          </h1>
-        </div>
-        <div>3</div>
-        <dir className="lg:col-span-2 col-span-2 bg-red-600">4</dir>
-      </div> */}
-
       <div className="grid grid-cols-1 lg:grid-cols-2 bg-gray-100 gap-y-2 lg:gap-y-0">
         <div className="border-2">
           <div className="grid grid-cols-3 ">
