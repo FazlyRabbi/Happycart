@@ -1,0 +1,4 @@
+.navBar__mobile::-webkit-scrollbar{
+    display: none;
+}
+

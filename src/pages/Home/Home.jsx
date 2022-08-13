@@ -11,10 +11,7 @@ import BackToTop from "./BackToTop";
 import Footer from "../../shared/Footer/Footer";
 import HndSign from "../../shared/HndSign/HndSign";
 import Sidebar from "../../shared/Sidebar/Sidebar";
-import SliderMain from "../Components/SliderMain/SliderMain"
-import SingleProduct from "./SingleProduct/SingleProduct";
-import SinglePage from "./../SinglePage/SinglePage";
-
+import SliderMain from "../Components/SliderMain/SliderMain";
 function Home() {
   return (
     <div className="">
@@ -29,12 +26,9 @@ function Home() {
         <Grossary />
         <TopSellersInToys />
         <TopSellerInBook />
-      </div>
-
       <BottomSignIn />
       <BackToTop />
       <Footer />
-      <SliderMain />
     </div>
   );
 }
