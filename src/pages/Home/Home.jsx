@@ -12,9 +12,10 @@ import Footer from "../../shared/Footer/Footer";
 import HndSign from "../../shared/HndSign/HndSign";
 import Sidebar from "../../shared/Sidebar/Sidebar";
 import SliderMain from "../Components/SliderMain/SliderMain";
+
 function Home() {
   return (
-    <div className="">
+    <div>
       <Sidebar />
       <Navbar />
       {/* <SingleProduct /> */}
@@ -23,12 +24,13 @@ function Home() {
         <Banner />
         <PopularProductsInPc />
         <PopularProductsInBeauty />
-        <Grossary />
+        <Grossary />w
         <TopSellersInToys />
         <TopSellerInBook />
-      <BottomSignIn />
-      <BackToTop />
-      <Footer />
+        <BottomSignIn />
+        <BackToTop />
+        <Footer />
+      </div>
     </div>
   );
 }

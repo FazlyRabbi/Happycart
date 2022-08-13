@@ -11,32 +11,32 @@ function Footer() {
       <footer className=" bg-primary flex px-56    justify-between  h-[490px]  items-center   ">
         <div className="footer__items  py-5 grid xl:grid-cols-3 md:grid-cols-2 md:gap-x-6  gap-y-6  w-[50%]   justify-items-center ">
           <div className="text-[14px]  ">
-            <span class=" text-[16px] text-black font-bold">Services</span>
-            <a class="link link-hover block text-white   ">Help Center</a>
-            <a class="link link-hover block text-white">How to Buy</a>
-            <a class="link link-hover block text-white">Returns & Refunds</a>
-            <a class="link link-hover block text-white">Contact Us</a>
-            <a class="link link-hover block text-white">Terms & Conditions</a>
+            <span className=" text-[16px] text-black font-bold">Services</span>
+            <a className="link link-hover block text-white   ">Help Center</a>
+            <a className="link link-hover block text-white">How to Buy</a>
+            <a className="link link-hover block text-white">Returns & Refunds</a>
+            <a className="link link-hover block text-white">Contact Us</a>
+            <a className="link link-hover block text-white">Terms & Conditions</a>
           </div>
 
           <div className="text-[14px]">
-            <span class=" text-[16px] text-black font-bold">Happycart</span>
-            <a class="link link-hover block text-white   ">About Happycart</a>
-            <a class="link link-hover block text-white">
+            <span className=" text-[16px] text-black font-bold">Happycart</span>
+            <a className="link link-hover block text-white   ">About Happycart</a>
+            <a className="link link-hover block text-white">
               Happy with Digital Payments
             </a>
-            <a class="link link-hover block text-white">Returns & Refunds</a>
-            <a class="link link-hover block text-white">Contact Us</a>
-            <a class="link link-hover block text-white">Terms & Conditions</a>
+            <a className="link link-hover block text-white">Returns & Refunds</a>
+            <a className="link link-hover block text-white">Contact Us</a>
+            <a className="link link-hover block text-white">Terms & Conditions</a>
           </div>
 
           <div>
-            <span class=" text-[16px] text-black font-bold">Services</span>
-            <a class="link link-hover block text-white   ">Help Center</a>
-            <a class="link link-hover block text-white">How to Buy</a>
-            <a class="link link-hover block text-white">Returns & Refunds</a>
-            <a class="link link-hover block text-white">Contact Us</a>
-            <a class="link link-hover block text-white">Terms & Conditions</a>
+            <span className=" text-[16px] text-black font-bold">Services</span>
+            <a className="link link-hover block text-white   ">Help Center</a>
+            <a className="link link-hover block text-white">How to Buy</a>
+            <a className="link link-hover block text-white">Returns & Refunds</a>
+            <a className="link link-hover block text-white">Contact Us</a>
+            <a className="link link-hover block text-white">Terms & Conditions</a>
           </div>
         </div>
 
