@@ -42,7 +42,7 @@ function Navtop() {
             <input
               type="text"
               placeholder="Search on Happycart..."
-              class="input   grow  placeholder:text-black placeholder:font-bold rounded-lg  focus:outline-none"
+              className="input   grow  placeholder:text-black placeholder:font-bold rounded-lg  focus:outline-none"
             />
 
             <span className=" bg-black text-primary rounded-tr-lg  rounded-br-lg   cursor-pointer  p-3 -ml-2  ">
@@ -88,7 +88,7 @@ function Navtop() {
               <input
                 type="text"
                 placeholder="Search on Happycart..."
-                class="input lg:w-full  h-12  placeholder:text-black placeholder:font-bold block rounded-lg  focus:outline-none w-96  "
+                className="input lg:w-full  h-12  placeholder:text-black placeholder:font-bold block rounded-lg  focus:outline-none w-96  "
               />
 
               <span className="absolute bg-black text-primary rounded-tr-lg  rounded-br-lg top-0 right-0 p-3 cursor-pointer ">

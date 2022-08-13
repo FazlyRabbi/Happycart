@@ -13,13 +13,15 @@ import HndSign from "../../shared/HndSign/HndSign";
 import Sidebar from "../../shared/Sidebar/Sidebar";
 import SliderMain from "../Components/SliderMain/SliderMain"
 import SingleProduct from "./SingleProduct/SingleProduct";
+import SinglePage from "./../SinglePage/SinglePage";
 
 function Home() {
   return (
     <div className="">
       <Sidebar />
       <Navbar />
-      <SingleProduct />
+      {/* <SingleProduct /> */}
+      <SinglePage />
       <div className="container mx-auto">
         {/* <Banner />
         <PopularProductsInPc />
