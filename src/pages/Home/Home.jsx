@@ -21,7 +21,7 @@ function Home() {
       <Sidebar />
       <Navbar />
       {/* <SingleProduct /> */}
-      <SinglePage />
+      {/* <SinglePage /> */}
       <div className="container mx-auto">
         {/* <Banner />
         <PopularProductsInPc />
