@@ -12,9 +12,9 @@ const ProductRatingLeftSide = () => {
       <section className="space-y-2">
         <div className="flex justify-start items-center space-x-2">
           <h1>5 Star</h1>
-          <div className="md:w-10/12 lg:w-10/12 2xl:w-10/12 w-9/12 bg-gray-200 rounded-md h-6 ">
+          <div className="md:w-10/12 lg:w-10/12 2xl:w-10/12 w-9/12 bg-neutral rounded-md h-6 ">
             <div
-              className="bg-orange-600 h-6 rounded-lg"
+              className="bg-primary h-6 rounded-lg"
               style={{ width: "45%" }}
             ></div>
           </div>
@@ -22,9 +22,9 @@ const ProductRatingLeftSide = () => {
         </div>
         <div className="flex justify-start items-center space-x-2">
           <h1>4 Star</h1>
-          <div className="md:w-10/12 lg:w-10/12 2xl:w-10/12 w-9/12 bg-gray-200 rounded-md h-6 ">
+          <div className="md:w-10/12 lg:w-10/12 2xl:w-10/12 w-9/12 bg-neutral rounded-md h-6 ">
             <div
-              className="bg-orange-600 h-6 rounded-lg"
+              className="bg-primary h-6 rounded-lg"
               style={{ width: "85%" }}
             ></div>
           </div>
@@ -32,9 +32,9 @@ const ProductRatingLeftSide = () => {
         </div>
         <div className="flex justify-start items-center space-x-2">
           <h1>3 Star</h1>
-          <div className="md:w-10/12 lg:w-10/12 2xl:w-10/12 w-9/12 bg-gray-200 rounded-md h-6 ">
+          <div className="md:w-10/12 lg:w-10/12 2xl:w-10/12 w-9/12 bg-neutral rounded-md h-6 ">
             <div
-              className="bg-orange-600 h-6 rounded-lg"
+              className="bg-primary h-6 rounded-lg"
               style={{ width: "25%" }}
             ></div>
           </div>
@@ -42,9 +42,9 @@ const ProductRatingLeftSide = () => {
         </div>
         <div className="flex justify-start items-center space-x-2">
           <h1>2 Star</h1>
-          <div className="md:w-10/12 lg:w-10/12 2xl:w-10/12 w-9/12 bg-gray-200 rounded-md h-6 ">
+          <div className="md:w-10/12 lg:w-10/12 2xl:w-10/12 w-9/12 bg-neutral rounded-md h-6 ">
             <div
-              className="bg-orange-600 h-6 rounded-lg"
+              className="bg-primary h-6 rounded-lg"
               style={{ width: "2%" }}
             ></div>
           </div>
@@ -52,9 +52,9 @@ const ProductRatingLeftSide = () => {
         </div>
         <div className="flex justify-start items-center space-x-2">
           <h1>1 Star</h1>
-          <div className="md:w-10/12 lg:w-10/12 2xl:w-10/12 w-9/12 bg-gray-200 rounded-md h-6 ">
+          <div className="md:w-10/12 lg:w-10/12 2xl:w-10/12 w-9/12 bg-neutral rounded-md h-6 ">
             <div
-              className="bg-orange-600 h-6 rounded-lg"
+              className="bg-primary h-6 rounded-lg"
               style={{ width: "0%" }}
             ></div>
           </div>
