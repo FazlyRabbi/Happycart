@@ -2,47 +2,38 @@ module.exports = {
   content: ["./src/**/*.{js,jsx}"],
   theme: {
     screens: {
-      sm: "320px",
-      // => @media (min-width: 375px) { ... }
+      sm: '320px',
+      md: '768px',
+      lg: '974px',
+      xl: '1440px',
+    },
+    colors: {
+      primary: "#FF9900",
+      secondary: "#FF8500",
+      accent: "#008296",
+      neutral: "#EAEDED",
+      "base-100": "#FFFFFF",
+      white: "#fff",
+      success: "#F7F7F7",
+      warning: "#FBBD23",
+      error: "#F87272",
+    },
 
-      md: "768px",
-      // => @media (min-width: 768px) { ... }
-
-      lg: "1024px",
-      // => @media (min-width: 1024px) { ... }
-
-      xl: "1280px",
-      // => @media (min-width: 1280px) { ... }
-
-      "2xl": "1536px",
-      // => @media (min-width: 1536px) { ... }
+    fontSize: {
+      mdp: "1rem",
+      mdh: "2rem",
+      smh: "1rem",
+      smp: ".5rem",
+      lg: "1.125rem",
+      xl: "1.25rem",
+      "2xl": "1.5rem",
+      "3xl": "1.875rem",
+      "4xl": "2.25rem",
+      "5xl": "3rem",
+      "6xl": "4rem",
+      "7xl": "5rem",
     },
   },
 
-  daisyui: {
-    themes: [
-      {
-        mytheme: {
-          primary: "#FF9900",
-
-          secondary: "#FF8500",
-
-          accent: "#008296",
-
-          neutral: "#EAEDED",
-
-          "base-100": "#FFFFFF",
-
-          info: "#323232",
-
-          success: "#F7F7F7",
-
-          warning: "#FBBD23",
-
-          error: "#F87272",
-        },
-      },
-    ],
-  },
-  plugins: [require("daisyui")],
+  plugins: [],
 };

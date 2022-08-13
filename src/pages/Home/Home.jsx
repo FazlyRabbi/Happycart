@@ -16,10 +16,9 @@ import SingleProduct from "./SingleProduct/SingleProduct";
 
 function Home() {
   return (
-    <div className="">
-      <Sidebar />
+    <div className="bg-neutral">
+      {/* <Sidebar /> */}
       <Navbar />
-      <SingleProduct />
       <div className="container mx-auto">
         {/* <Banner />
         <PopularProductsInPc />
@@ -28,11 +27,10 @@ function Home() {
         <TopSellersInToys />
         <TopSellerInBook /> */}
       </div>
-
       {/* <BottomSignIn />
       <BackToTop />
       <Footer />
-      <SliderMain/> */}
+      <SliderMain />  */}
     </div>
   );
 }

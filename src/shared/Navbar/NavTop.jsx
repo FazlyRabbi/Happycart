@@ -11,15 +11,18 @@ import {
   AiOutlineShoppingCart,
 } from "react-icons/ai";
 
-function Navtop() {
+function Navtop({ openNav }) {
   return (
     <>
-      {/* {navbar for small device} */}
-      <div className="bg-primary sm:block md:hidden w-[100vw] ">
+      {/* {navTop for small device} */}
+      <div className="bg-primary sm:block md:hidden  ">
         <div className="flex items-center  justify-between px-5 py-3  ">
           <div className="left flex space-x-2  ">
             <div className="navigator">
-              <AiOutlineMenu className="text-[30px] block cursor-pointer" />
+              <AiOutlineMenu
+                className="text-[30px] block cursor-pointer"
+                onClick={openNav}
+              />
             </div>
             <div className="logo  max-w-[15rem] cursor-pointer">
               <img src={logo} alt="logo" />
@@ -36,122 +39,129 @@ function Navtop() {
           </div>
         </div>
 
-        {/* { navbar for large and medium device} */}
-        <div className="nav__search px-4 pt-3 pb-5">
+        <div className="nav__search px-4 pt-1 ">
           <div className="search__box flex ">
             <input
               type="text"
               placeholder="Search on Happycart..."
-              class="input   grow  placeholder:text-black placeholder:font-bold rounded-lg  focus:outline-none"
+              class="input  grow  p-2 placeholder:text-black placeholder:font-bold rounded-lg  focus:outline-none"
             />
 
-            <span className=" bg-black text-primary rounded-tr-lg  rounded-br-lg   cursor-pointer  p-3 -ml-2  ">
-              <AiOutlineSearch className="text-[21px]  " />
+            <span className="bg-[#000] rounded-tr-lg py-3 px-2  rounded-br-lg  cursor-pointer  -ml-2 ">
+              <AiOutlineSearch className=" text-[1.3rem]   text-primary font-bold" />
             </span>
           </div>
         </div>
       </div>
 
-      {/* {navbar for large device} */}
-      <div
-        className="nav__top h-[60px] sm:hidden md:block lg:block flex bg-primary items-center justify-center "
-        id="top"
-      >
-        {/* navigation left side  */}
-        <div className="nav__left flex max-h-[60px] w-[295px]  justify-center items-center">
-          <div className="logo py-5  cursor-pointer   ">
-            <img
-              src={logo}
-              alt="logo"
-              className="border border-transparent
-              hover:border-white p-2 rounded-sm"
-            />
-          </div>
-          <div className="location py-5   mx-3">
-            <div
-              className="flex items-center cursor-pointer  border border-transparent
-              hover:border-white p-1 rounded-sm"
-            >
-              <div className="mr-1"></div>
+      {/* {navTop for large device} */}
 
-              <div>
-                <span className="block text-[12px] font-bold">Delivery To</span>
-                <span className="font-bold m-0">Bangladesh</span>
+      <div className="sm:hidden md:block px-3 bg-primary">
+        <div className="nav__top flex   items-center  h-[4rem] " id="top">
+          {/* navigation left side  */}
+          <div className="nav__left flex items-center   ">
+            {/* logo */}
+            <div className="logo cursor-pointer lg:mr-5 md:mr-1 ">
+              <img
+                src={logo}
+                alt="logo"
+                className="
+              rounded-sm   border  border-primary hover:border-white p-2  h-fit "
+              />
+            </div>
+
+            {/* location */}
+            <div className="location lg:mr-5 md:mr-1 border  border-primary hover:border-white p-2 ">
+              <div
+                className="flex items-center cursor-pointer  
+                rounded-sm"
+              >
+                <div className="mr-1">
+                  <FaRegUserCircle className=" lg:text-[1.5rem] md:text-[1.3rem]" />
+                </div>
+
+                <div className=" leading-tight">
+                  <span className="block lg:text-[12px] md:text-[12px]">
+                    Delivery To
+                  </span>
+                  <span className="font-bold lg:text-[12px] md:text-[10px] ">
+                    Bangladesh
+                  </span>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        {/* navigation serchbar */}
-        <div className="nav__search  py-5 grow    ">
-          <div className="search__box">
-            <div className="relative">
+
+          {/* navigation serchbar */}
+
+          <div className="nav__search  grow lg:mr-5 md:mr-1  ">
+            <div className="search__box flex items-center ">
               <input
                 type="text"
                 placeholder="Search on Happycart..."
-                class="input lg:w-full  h-12  placeholder:text-black placeholder:font-bold block rounded-lg  focus:outline-none w-96  "
+                class="input grow px-2 lg:py-3 md:py-2 placeholder:text-black placeholder:font-bold rounded-lg focus:outline-none"
               />
 
-              <span className="absolute bg-black text-primary rounded-tr-lg  rounded-br-lg top-0 right-0 p-3 cursor-pointer ">
-                <AiOutlineSearch className="text-[21px] " />
+              <span className="bg-[#000] rounded-tr-lg py-1 px-1  rounded-br-lg  cursor-pointer  -ml-2 ">
+                <AiOutlineSearch className=" lg:text-[2.5rem] md:text-[2rem]  text-primary font-bold" />
               </span>
             </div>
           </div>
-        </div>
 
-        {/* navigation right */}
-        <div className=" mx-4  ">
-          <div className="flex justify-around  max-h-[60px] p-2">
-            <div
-              className="flex  items-center cursor-pointer  border border-transparent rounded-sm
-              hover:border-white  px-1 "
-            >
-              <img src={flag} alt="flag" />
-              <AiFillCaretDown className="text-white  text-[12px] mt-5" />
-            </div>
-
-            <div
-              className="flex  items-center cursor-pointer  mx-2 border border-transparent
-              hover:border-white rounded-sm"
-            >
-              <div className="px-3  ">
-                <span
-                  className="text-[12px] font-bold
-            "
-                >
-                  Hello, Sign in
-                </span>
-                <br />
-                <span className="font-bold">Account & Lists</span>
+          {/* navigation right */}
+          <div>
+            <div className="flex justify-around  ">
+              <div
+                className="flex items-center cursor-pointer rounded-sm
+                 mr-3 border  border-primary hover:border-white p-2 "
+              >
+                <img src={flag} alt="flag" className=" h-fit" />
+                <AiFillCaretDown className="text-white  lg:text-[1.3rem] md:text-[1rem] mt-4" />
               </div>
 
-              <span className="block mt-6">
-                <AiFillCaretDown className="text-white ml-1 text-[17px]" />
-              </span>
-            </div>
-
-            <div
-              className="flex py-5  items-center cursor-pointer  border border-transparent
-              hover:border-white rounded-sm "
-            >
-              <div className="mx-2">
-                <span
-                  className="text-[12px] font-bold
+              <div className="flex items-center cursor-pointer  mr-3  rounded-sm border  border-primary hover:border-white p-1">
+                <div className="leading-tight">
+                  <span
+                    className="lg:text-[12px] md:text-[10px] font-bold
             "
-                >
-                  Returns
+                  >
+                    Hello, Sign in
+                  </span>
+                  <br />
+                  <span className="font-bold lg:text-[12px] md:text-[10px]">
+                    Account & Lists
+                  </span>
+                </div>
+
+                <span className="block mt-5">
+                  <AiFillCaretDown className="text-white ml-1 lg:text-[1.3rem] md:text-[1rem]" />
                 </span>
-                <br />
-                <span className="font-bold"> & Orders</span>
               </div>
-            </div>
-            <div
-              className="flex items-center cursor-pointer border border-transparent
-              hover:border-white rounded-sm p-1"
-            >
-              <span className="">
-                <AiOutlineShoppingCart className="text-[35px]" />
-              </span>
-              <span className="font-bold mt-2">Cart</span>
+
+              <div className="flex lg:mr-5 md:mr-1 leading-tight items-center cursor-pointerrounded-sm rounded-sm border  border-primary hover:border-white p-1">
+                <div className="">
+                  <span
+                    className="lg:text-[12px] md:text-[10px] font-bold
+            "
+                  >
+                    Returns
+                  </span>
+                  <br />
+                  <span className="font-bold lg:text-[12px] md:text-[10px]">
+                    {" "}
+                    & Orders
+                  </span>
+                </div>
+              </div>
+
+              <div className="flex  items-center cursor-pointer rounded-sm  border  border-primary hover:border-white p-1">
+                <span className="">
+                  <AiOutlineShoppingCart className="lg:text-[2.6rem] md:text-[2.2rem]" />
+                </span>
+                <span className="font-bold lg:text-[12px] md:text-[10px] mt-2">
+                  Cart
+                </span>
+              </div>
             </div>
           </div>
         </div>
