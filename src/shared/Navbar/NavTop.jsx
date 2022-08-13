@@ -57,7 +57,7 @@ function Navtop({ openNav }) {
       {/* {navTop for large device} */}
 
       <div className="sm:hidden md:block px-3 bg-primary">
-        <div className="nav__top flex   items-center  h-[3.75rem] " id="top">
+        <div className="nav__top flex   items-center  h-[4rem] " id="top">
           {/* navigation left side  */}
           <div className="nav__left flex items-center   ">
             {/* logo */}
