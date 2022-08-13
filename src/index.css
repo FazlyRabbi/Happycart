@@ -2,10 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
 @font-face {
   font-family: "AmazonEmber";
   src: local("AmazonEmber"),
     url("./asstes/fonts/AmazonEmber/AmazonEmber_Rg.ttf") format("truetype");
 }
-
 

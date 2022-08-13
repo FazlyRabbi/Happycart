@@ -44,7 +44,7 @@ function Navtop({ openNav }) {
             <input
               type="text"
               placeholder="Search on Happycart..."
-              class="input  grow  p-2 placeholder:text-black placeholder:font-bold rounded-lg  focus:outline-none"
+              className="input  grow  p-2 placeholder:text-black placeholder:font-bold rounded-lg  focus:outline-none"
             />
 
             <span className="bg-[#000] rounded-tr-lg py-3 px-2  rounded-br-lg  cursor-pointer  -ml-2 ">
@@ -99,7 +99,7 @@ function Navtop({ openNav }) {
               <input
                 type="text"
                 placeholder="Search on Happycart..."
-                class="input grow px-2 lg:py-3 md:py-2 placeholder:text-black placeholder:font-bold rounded-lg focus:outline-none"
+                className="input grow px-2 lg:py-3 md:py-2 placeholder:text-black placeholder:font-bold rounded-lg focus:outline-none"
               />
 
               <span className="bg-[#000] rounded-tr-lg py-1 px-1  rounded-br-lg  cursor-pointer  -ml-2 ">

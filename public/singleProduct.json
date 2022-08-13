@@ -1,0 +1,27 @@
+{
+    "id" : 298392298,
+    "images" : {
+        "small" : "",
+        "large" : ""
+    },
+    "price" : "",
+    "delivery_date" : "",
+    "delivery_charge" : "",
+    "deviver_place" : "",
+    "solved_by" : "",
+    "details_info" : [
+        { "title" : "Printing Technology", "value" : "Inkjet"},
+        { "title" : "Printing Technology", "value" : "Inkjet"},
+        { "title" : "Printing Technology", "value" : "Inkjet"},
+        { "title" : "Printing Technology", "value" : "Inkjet"},
+        { "title" : "Printing Technology", "value" : "Inkjet"},
+        { "title" : "Printing Technology", "value" : "Inkjet"},
+        { "title" : "Printing Technology", "value" : "Inkjet"},
+        { "title" : "Printing Technology", "value" : "Inkjet"}
+    ],
+    "shared_link" : [
+    ],
+
+    "description" : ""
+    
+}

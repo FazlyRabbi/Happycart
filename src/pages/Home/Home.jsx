@@ -15,22 +15,22 @@ import SliderMain from "../Components/SliderMain/SliderMain";
 
 function Home() {
   return (
-    <div className="bg-neutral">
-      {/* <Sidebar /> */}
+    <div>
+      <Sidebar />
       <Navbar />
-      {/* <div className="container mx-auto">
+      {/* <SingleProduct /> */}
+      {/* <SinglePage /> */}
+      <div className="container mx-auto">
         <Banner />
         <PopularProductsInPc />
         <PopularProductsInBeauty />
-        <Grossary />
+        <Grossary />w
         <TopSellersInToys />
         <TopSellerInBook />
-      </div> */}
-{/* 
-      <BottomSignIn />
-      <BackToTop />
-      <Footer />
-      <SliderMain /> */}
+        <BottomSignIn />
+        <BackToTop />
+        <Footer />
+      </div>
     </div>
   );
 }
