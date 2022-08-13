@@ -4,6 +4,8 @@ import "./asstes/fonts/AmazonEmber/AmazonEmber_Bd.ttf";
 import "./asstes/fonts/AmazonEmber/AmazonEmber_Rg.ttf";
 import "./index.css";
 import App from "./App";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import { BrowserRouter as Router } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

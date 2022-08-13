@@ -26,6 +26,7 @@ function Navbar() {
         </span>
       </a>
 
+      
       <a
         href="#"
         className=" border border-primary
@@ -72,7 +73,7 @@ function Navbar() {
         {NavItems}
       </div>
       {/* {navbar for big device} */}
-      {/* 
+{/* 
       <div className="nav__main flex  justify-left child:text-gray-200 text-[14px]  p-3 bg-secondary text-white">
          {NavItems} 
       </div>  */}
