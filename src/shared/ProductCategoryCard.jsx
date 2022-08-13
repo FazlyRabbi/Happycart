@@ -20,7 +20,7 @@ const ProductCategoryCard = ({ curElem }) => {
           );
         })}
       </div>
-      <button className="bg-yellow-500 px-6 py-1 text-lg rounded-lg mt-4 mb-2 shadow-sm hover:bg-yellow-600 hover:text-white transition duration-150 ease-linear">
+      <button className="bg-primary px-6 py-1 text-lg rounded-lg mt-4 mb-2 shadow-sm hover:bg-secondary hover:text-white transition duration-150 ease-linear">
         Shop Now
       </button>
     </div>
