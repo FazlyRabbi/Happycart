@@ -44,13 +44,8 @@ function Navtop({ openNav }) {
             <input
               type="text"
               placeholder="Search on Happycart..."
-<<<<<<< HEAD
               class="input  grow  p-2 placeholder:text-black placeholder:font-bold rounded-lg  focus:outline-none"
-=======
-              className="input   grow  placeholder:text-black placeholder:font-bold rounded-lg  focus:outline-none"
->>>>>>> absiddikhp
             />
-
             <span className="bg-[#000] rounded-tr-lg py-3 px-2  rounded-br-lg  cursor-pointer  -ml-2 ">
               <AiOutlineSearch className=" text-[1.3rem]   text-primary font-bold" />
             </span>
@@ -103,13 +98,8 @@ function Navtop({ openNav }) {
               <input
                 type="text"
                 placeholder="Search on Happycart..."
-<<<<<<< HEAD
                 class="input grow px-2 lg:py-3 md:py-2 placeholder:text-black placeholder:font-bold rounded-lg focus:outline-none"
-=======
-                className="input lg:w-full  h-12  placeholder:text-black placeholder:font-bold block rounded-lg  focus:outline-none w-96  "
->>>>>>> absiddikhp
               />
-
               <span className="bg-[#000] rounded-tr-lg py-1 px-1  rounded-br-lg  cursor-pointer  -ml-2 ">
                 <AiOutlineSearch className=" lg:text-[2.5rem] md:text-[2rem]  text-primary font-bold" />
               </span>
