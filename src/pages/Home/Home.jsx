@@ -18,9 +18,8 @@ function Home() {
     <div>
       <Sidebar />
       <Navbar />
-      {/* <SingleProduct /> */}
-      {/* <SinglePage /> */}
-      <div className="container mx-auto">
+  
+      {/* <div className="container mx-auto">
         <Banner />
         <PopularProductsInPc />
         <PopularProductsInBeauty />
@@ -30,7 +29,7 @@ function Home() {
         <BottomSignIn />
         <BackToTop />
         <Footer />
-      </div>
+      </div> */}
     </div>
   );
 }
