@@ -17,3 +17,6 @@
     url("./asstes/fonts/AmazonEmber/AmazonEmber_Rg.ttf") format("truetype");
 }
 
+.slick-track{
+  display: flex !important;
+}

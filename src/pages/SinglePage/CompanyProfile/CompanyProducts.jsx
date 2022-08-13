@@ -7,7 +7,7 @@ const CompanyProducts = ({ ProfileProductCategory, products }) => {
   const settings = {
     dots: false,
     infinite: false,
-    arrows: true,
+    arrows: false,
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 2,
@@ -48,7 +48,7 @@ const CompanyProducts = ({ ProfileProductCategory, products }) => {
         <div className="md:col-span-1 lg:col-span-1 2xl:col-span-1 col-span-4">
           <ProductCategoryCard curElem={ProfileProductCategory[0]} />
         </div>
-        <div className="md:col-span-3 lg:col-span-3 2xl:col-span-3 col-span-4">
+        <div className="md:col-span-3 lg:col-span-3 2xl:col-span-3 col-span-4 ">
           <Slider {...settings}>
             {products.map((product, index) => {
               return (
@@ -65,7 +65,7 @@ const CompanyProducts = ({ ProfileProductCategory, products }) => {
           <ProductCategoryCard curElem={ProfileProductCategory[1]} />
         </div>
         <div className="md:col-span-3 lg:col-span-3 2xl:col-span-3 col-span-4 ">
-          <Slider {...settings}>
+          <Slider {...settings} className="">
             {products.map((product, index) => {
               return (
                 <div key={index} className=" ">
