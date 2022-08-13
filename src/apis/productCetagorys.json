@@ -1,0 +1,68 @@
+[
+  {
+    "_id": 1,
+    "category": "Computer",
+    "list": [
+      {
+        "image": "https://m.media-amazon.com/images/I/81FObdx9WeL._AC_SX679_.jpg",
+        "name": "Laptop"
+      },
+      {
+        "image": "https://m.media-amazon.com/images/I/81FObdx9WeL._AC_SX679_.jpg",
+        "name": "Desktop"
+      },
+      {
+        "image": "https://m.media-amazon.com/images/I/81FObdx9WeL._AC_SX679_.jpg",
+        "name": "Ram"
+      },
+      {
+        "image": "https://m.media-amazon.com/images/I/81FObdx9WeL._AC_SX679_.jpg",
+        "name": "SSD M.2"
+      }
+    ]
+  },
+  {
+    "_id": 1,
+    "category": "Laptop",
+    "list": [
+      {
+        "image": "https://m.media-amazon.com/images/I/81FObdx9WeL._AC_SX679_.jpg",
+        "name": "Laptop"
+      },
+      {
+        "image": "https://m.media-amazon.com/images/I/81FObdx9WeL._AC_SX679_.jpg",
+        "name": "Desktop"
+      },
+      {
+        "image": "https://m.media-amazon.com/images/I/81FObdx9WeL._AC_SX679_.jpg",
+        "name": "Ram"
+      },
+      {
+        "image": "https://m.media-amazon.com/images/I/81FObdx9WeL._AC_SX679_.jpg",
+        "name": "SSD M.2"
+      }
+    ]
+  },
+  {
+    "_id": 1,
+    "category": "Computer",
+    "list": [
+      {
+        "image": "https://m.media-amazon.com/images/I/81FObdx9WeL._AC_SX679_.jpg",
+        "name": "Laptop"
+      },
+      {
+        "image": "https://m.media-amazon.com/images/I/81FObdx9WeL._AC_SX679_.jpg",
+        "name": "Desktop"
+      },
+      {
+        "image": "https://m.media-amazon.com/images/I/81FObdx9WeL._AC_SX679_.jpg",
+        "name": "Ram"
+      },
+      {
+        "image": "https://m.media-amazon.com/images/I/81FObdx9WeL._AC_SX679_.jpg",
+        "name": "SSD M.2"
+      }
+    ]
+  }
+]

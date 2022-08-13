@@ -12,14 +12,15 @@ import Footer from "../../shared/Footer/Footer";
 import HndSign from "../../shared/HndSign/HndSign";
 import Sidebar from "../../shared/Sidebar/Sidebar";
 import SliderMain from "../Components/SliderMain/SliderMain";
-
 function Home() {
   return (
-    <div className="bg-neutral">
-      {/* <Sidebar /> */}
+    <div className="">
+      <Sidebar />
       <Navbar />
-      {/* <div className="container mx-auto">
-        <Banner />
+      {/* <SingleProduct /> */}
+      {/* <SinglePage /> */}
+      <div className="container mx-auto">
+        {/* <Banner />
         <PopularProductsInPc />
         <PopularProductsInBeauty />
         <Grossary />
@@ -28,6 +29,10 @@ function Home() {
       </div> */}
 {/* 
       <BottomSignIn />
+        <TopSellerInBook /> */}
+      </div>
+
+      {/* <BottomSignIn />
       <BackToTop />
       <Footer />
       <SliderMain /> */}
