@@ -1,17 +1,29 @@
 import React from "react";
-import logo from "../../asstes/img/logo.png";
-import flag from "../../asstes/img/Asset 7.png";
 import { FaRegUserCircle } from "react-icons/fa";
+import flag from "../../asstes/img/Asset 7.png";
+import logo from "../../asstes/img/logo.png";
+
+import { useState } from "react";
+import { useNavigate } from 'react-router-dom';
 
 import {
-  AiOutlineMenu,
-  IoMdLocate,
-  AiOutlineSearch,
   AiFillCaretDown,
-  AiOutlineShoppingCart,
+  AiOutlineMenu,
+  AiOutlineSearch,
+  AiOutlineShoppingCart
 } from "react-icons/ai";
 
 function Navtop({ openNav }) {
+  const navigate = useNavigate();
+  const [searchTag, setSearchTag] = useState("");
+  const SubmitSearch =()=>{
+    if(searchTag ==="") alert("Search not empty") 
+    if(searchTag){
+      setSearchTag("")
+      navigate(`/shop/${searchTag}`)
+    }
+  }
+ 
   return (
     <>
       {/* {navTop for small device} */}
@@ -44,12 +56,15 @@ function Navtop({ openNav }) {
             <input
               type="text"
               placeholder="Search on Happycart..."
-
+              value={searchTag}
+              onChange={(e) => {
+                setSearchTag(e.target.value);
+              }}
               className="input  grow  p-2 placeholder:text-black placeholder:font-bold rounded-lg  focus:outline-none"
             />
-            <span className="bg-[#000] rounded-tr-lg py-3 px-2  rounded-br-lg  cursor-pointer  -ml-2 ">
+            <button onClick={SubmitSearch}  className="bg-[#000] rounded-tr-lg py-3 px-2  rounded-br-lg  cursor-pointer  -ml-2 ">
               <AiOutlineSearch className=" text-[1.3rem]   text-primary font-bold" />
-            </span>
+            </button>
           </div>
         </div>
       </div>
@@ -98,13 +113,16 @@ function Navtop({ openNav }) {
             <div className="search__box flex items-center ">
               <input
                 type="text"
+                value={searchTag}
+                onChange={(e) => {
+                  setSearchTag(e.target.value);
+                }}
                 placeholder="Search on Happycart..."
-
                 className="input grow px-2 lg:py-3 md:py-2 placeholder:text-black placeholder:font-bold rounded-lg focus:outline-none"
               />
-              <span className="bg-[#000] rounded-tr-lg py-1 px-1  rounded-br-lg  cursor-pointer  -ml-2 ">
+              <button onClick={SubmitSearch} className="bg-[#000] rounded-tr-lg py-1 px-1  rounded-br-lg  cursor-pointer  -ml-2 ">
                 <AiOutlineSearch className=" lg:text-[2.5rem] md:text-[2rem]  text-primary font-bold" />
-              </span>
+              </button>
             </div>
           </div>
 

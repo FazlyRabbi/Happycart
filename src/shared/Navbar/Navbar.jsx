@@ -1,7 +1,7 @@
 import React from "react";
-import NavTop from "./NavTop";
 import { AiOutlineMenu } from "react-icons/ai";
 import "./navbar.css";
+import NavTop from "./NavTop";
 
 function Navbar() {
   const openNav = () => {

@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import App from "./App";
 import "./asstes/fonts/AmazonEmber/AmazonEmber_Bd.ttf";
 import "./asstes/fonts/AmazonEmber/AmazonEmber_Rg.ttf";
 import "./index.css";
-import App from "./App";
 
 import { BrowserRouter as Router } from "react-router-dom";
 
