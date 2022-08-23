@@ -1,22 +1,90 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { v4 as uuidv4 } from "uuid";
 import ShopApi from "../../apis/shopApi.json";
-import Footer from "../../shared/Footer/Footer";
-import Header from "../../shared/Navbar/Navbar";
 import PhoneSideBar from "../Components/ShopPageComponents/PhoneSideBar";
 import ShopPageCard from "../Components/ShopPageComponents/ShopPageCard";
 import ShopPageSidebar from "../Components/ShopPageComponents/ShopPageSidebar";
-const shopPage = () => {
+const shopPage = ({}) => {
   const { name } = useParams();
-  const [isToggle, setIsToggle] = useState(false)
+  const [isToggle, setIsToggle] = useState(false);
+  const [filterProject, setFilterProject] = useState();
+  const [searchFilterProject, setSearchFilterProject] = useState();
+  const [brandFilter, setBrandFilter] = useState({
+    apple: "",
+    asus: "",
+    hp: "",
+    nick: "",
+    pran: "",
+    sony: "",
+  });
+  const [conditionFilter, setConditionFilter] = useState({ new: "", used: "" });
+  const [ratingFilter, setRatingFilter] = useState({
+    one: "",
+    two: "",
+    three: "",
+    four: "",
+    five: "",
+  });
+  const [categoryFilter, setCatoryFilter] = useState({
+    grossery: "",
+    headphone: "",
+    laptop: "",
+    mobile: "",
+    shoes: "",
+    watch: "",
+  });
+
+  useEffect(() => {
+    // fetch categoryes
+    const product = ShopApi.filter(
+      (x) =>
+        x.category == categoryFilter.grossery ||
+        x.category == categoryFilter.headphone ||
+        x.category == categoryFilter.laptop ||
+        x.category == categoryFilter.mobile ||
+        x.category == categoryFilter.shoes ||
+        x.category == categoryFilter.watch ||
+        x.brand == brandFilter.apple ||
+        x.brand == brandFilter.asus ||
+        x.brand == brandFilter.hp ||
+        x.brand == brandFilter.nick ||
+        x.brand == brandFilter.pran ||
+        x.brand == brandFilter.sony ||
+        x.rateing == ratingFilter.one ||
+        x.rateing == ratingFilter.two ||
+        x.rateing == ratingFilter.three ||
+        x.rateing == ratingFilter.four ||
+        x.rateing == ratingFilter.five ||
+        x.condition == conditionFilter.new ||
+        x.condition == conditionFilter.used 
+    );
+    const searchProduct = ShopApi.filter((val) => {
+      if (name == "") {
+        return false;
+      } else if (val.title?.toLowerCase().includes(name?.toLowerCase())) {
+        return val;
+      } else if (val.brand?.toLowerCase().includes(name?.toLowerCase())) {
+        return val;
+      } else if (val.category?.toLowerCase().includes(name?.toLowerCase())) {
+        return val;
+      } else if (val.condition?.toLowerCase().includes(name?.toLowerCase())) {
+        return val;
+      }
+    });
+    setFilterProject(product);
+    setSearchFilterProject(searchProduct);
+    console.log(searchFilterProject);
+  }, [categoryFilter, brandFilter, ratingFilter, conditionFilter, name]);
   return (
     <>
-      <Header />
       <div>
-        <h1 className={`text-2xl lg:hidden ${isToggle ? "float-right mr-5":"ml-5"}  mt-5 xl:hidden`}>
+        <h1
+          className={`text-2xl lg:hidden ${
+            isToggle ? "float-right mr-5" : "ml-5"
+          }  mt-5 xl:hidden`}
+        >
           <svg
-          onClick={()=>setIsToggle(!isToggle)}
+            onClick={() => setIsToggle(!isToggle)}
             xmlns="http://www.w3.org/2000/svg"
             className="h-10 w-10 cursor-pointer hover:text-secondary hover:scale-110"
             fill="none"
@@ -36,7 +104,18 @@ const shopPage = () => {
       <section className="mt-4 relative min-h-screen">
         <div className="grid grid-cols-12 gap-x-4">
           <div className="hidden md:hidden lg:col-span-2 xl:col-span-2 lg:block xl:block p-2 lg:p-0 xl:p-0 ">
-            <ShopPageSidebar />
+            <ShopPageSidebar
+              allDetails={[
+                categoryFilter,
+                brandFilter,
+                ratingFilter,
+                conditionFilter,
+                setConditionFilter,
+                setRatingFilter,
+                setCatoryFilter,
+                setBrandFilter,
+              ]}
+            />
           </div>
           <div className="md:col-span-12 lg:col-span-10 xl:col-span-10 col-span-12">
             <div className="mt-4 font-medium px-4 xl:p-0">
@@ -49,34 +128,16 @@ const shopPage = () => {
               </p>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-4 p-2">
-              {ShopApi.filter((val) => {
-                if (name == "all") {
-                  return val;
-                } else if (
-                  val.title.toLowerCase().includes(name.toLowerCase())
-                ) {
-                  return val;
-                } else if (
-                  val.brand.toLowerCase().includes(name.toLowerCase())
-                ) {
-                  return val;
-                } else if (
-                  val.category.toLowerCase().includes(name.toLowerCase())
-                ) {
-                  return val;
-                } else if (
-                  val.condition?.toLowerCase().includes(name.toLowerCase())
-                ) {
-                  return val;
-                }
-              }).sort().map((val) => {
-                return <ShopPageCard key={uuidv4()} product={val} />;
+              {filterProject?.sort().map((val, index) => {
+                return <ShopPageCard key={index} product={val} />;
+              })}
+              {searchFilterProject?.sort().map((val, index) => {
+                return <ShopPageCard key={index} product={val} />;
               })}
             </div>
           </div>{" "}
         </div>
       </section>{" "}
-      <Footer/>
     </>
   );
 };

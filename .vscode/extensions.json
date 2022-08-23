@@ -1,5 +1,6 @@
 {
-    "recommendations": [
-        "equinusocio.vsc-material-theme-icons",
-    ],
+  "recommendations": [
+    "equinusocio.vsc-material-theme-icons",
+    "steoates.autoimport"
+  ]
 }

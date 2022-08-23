@@ -14,12 +14,11 @@
   {
     "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHByb2R1Y3R8ZW58MHx8MHx8&w=1000&q=80",
     "hover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhtcCnGZQMpYVCuKY76yBvEBS2A_XY5qzFrIuD8hMJGnSbhrEz0a_8QCBK5fsLcWE5Fgs&usqp=CAU",
-    "title": "Nick Brand New Red color shows",
+    "title": "Nick Brand New Red color shoes",
     "desc": "hello this is a",
     "price": 10000,
     "discount": null,
-    "category": "show",
-    "rateing": 3,
+    "category": "shoes",
     "brand": "nick",
     "condition": "new",
     "rateing": 1400
@@ -27,11 +26,11 @@
   {
     "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHByb2R1Y3R8ZW58MHx8MHx8&w=1000&q=80",
     "hover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhtcCnGZQMpYVCuKY76yBvEBS2A_XY5qzFrIuD8hMJGnSbhrEz0a_8QCBK5fsLcWE5Fgs&usqp=CAU",
-    "title": "Nick Brand New Red color shows",
+    "title": "Nick Brand New Red color shoes",
     "desc": "hello this is a",
     "price": 9000,
     "discount": 10,
-    "category": "show",
+    "category": "shoes",
     "brand": "nick",
     "condition": "new",
     "rateing": 1400

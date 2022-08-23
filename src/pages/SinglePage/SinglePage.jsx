@@ -1,24 +1,22 @@
 import React from "react";
-import TopOfferBanner from "./TopOfferBanner";
-import ImageSection from "./ImageSection";
-import SingleProductDescription from "./SingleProductDescription";
-import RelatedProducts from "./RelatedProducts";
-import InTheBox from "./InTheBox";
+import PathName from "./../../shared/PathName";
 import Comments from "./Comments";
 import CompanyProfile from "./CompanyProfile/CompanyProfile";
-import PathName from "./../../shared/PathName";
+import ImageSection from "./ImageSection";
+import InTheBox from "./InTheBox";
+import RelatedProducts from "./RelatedProducts";
+import SingleProductDescription from "./SingleProductDescription";
+import TopOfferBanner from "./TopOfferBanner";
 
 import ProductComment from "../../apis/comments.json";
+import ProfileProductCategory from "../../apis/productCetagorys.json";
 import ProductJson from "../../apis/products.json";
 import ProductDetail from "../../apis/singleProduct.json";
-import ProfileProductCategory from "../../apis/productCetagorys.json";
-import Navbar from "../../shared/Navbar/Navbar";
 import ProductRating from "./ProductRating/ProductRating";
 
 const SinglePage = () => {
   return (
     <>
-      <Navbar />
       <div className="">
         {/* offer banner */}
         <TopOfferBanner />
