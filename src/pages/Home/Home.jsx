@@ -1,10 +1,15 @@
 import React from "react";
 import Sidebar from "../../shared/Sidebar/Sidebar";
+import SliderMain from "../Components/SliderMain/SliderMain";
 
 function Home() {
   return (
     <div>
       <Sidebar />
+      <Navbar />
+      {/* <SingleProduct /> */}
+      {/* <SinglePage /> */}
+      <div className="container mx-auto">
   
       {/* <div className="container mx-auto">
         <Banner />
@@ -16,6 +21,7 @@ function Home() {
         <BottomSignIn />
         <BackToTop />
         <Footer />
+      </div>
       </div> */}
     </div>
   );

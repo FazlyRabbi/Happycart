@@ -58,6 +58,7 @@ function Navtop({ openNav }) {
             <input
               type="text"
               placeholder="Search on Happycart..."
+
               value={searchTag}
               onChange={(e) => {
                 setSearchTag(e.target.value);
