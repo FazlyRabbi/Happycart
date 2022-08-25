@@ -24,3 +24,11 @@
 ul.notic_ul {
   list-style-type: square !important;
 }
+.university_hero {
+  /* background-color: red; */
+  background: url("./asstes/bg/university.png") no-repeat;
+  background-position: center 100%;
+  width: 100%;
+  background-size: contain;
+  min-height: 50vh;
+}

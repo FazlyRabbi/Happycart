@@ -1,5 +1,5 @@
 import React from "react";
-import Question from "../../apis/text.json";
+import Question from "../../../apis/text.json";
 import CustomerServicesSidebar from "./CustomerServicesSidebar";
 
 const CustomerServicesAndHelp = () => {

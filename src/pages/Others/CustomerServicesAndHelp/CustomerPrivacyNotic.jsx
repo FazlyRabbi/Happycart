@@ -1,5 +1,5 @@
 import React from "react";
-import Privacy from "../../apis/privacy.json";
+import Privacy from "../../../apis/privacy.json";
 import CustomerServicesSidebar from "./CustomerServicesSidebar";
 
 const CustomerPrivacyNotic = () => {
