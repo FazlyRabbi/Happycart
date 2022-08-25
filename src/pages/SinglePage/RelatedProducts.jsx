@@ -4,7 +4,7 @@ const RelatedProducts = ({ products }) => {
   const settings = {
     dots: false,
     infinite: true,
-    arrows: true,
+    arrows: false,
     speed: 500,
     slidesToShow: 5,
     slidesToScroll: 2,

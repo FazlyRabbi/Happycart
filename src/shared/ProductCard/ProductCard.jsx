@@ -15,7 +15,7 @@ const ProductCard = ({ data }) => {
       <p className="font-semibold lg:text-xl text-md text-red-600 my-2">
         Price : {data.price} Tk
       </p>
-      <button className="text-center bg-yellow-500 w-full py-2 rounded-lg text-lg font-semibold hover:bg-yellow-600 hover:text-white transition duration-150 ease-linear capitalize">
+      <button className="text-center bg-primary w-full py-2 rounded-lg text-lg font-semibold hover:bg-secondary hover:text-white transition duration-150 ease-linear capitalize">
         Add to cart
       </button>
     </div>

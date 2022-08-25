@@ -5,8 +5,8 @@ function ImageSection({ product }) {
   const [show, setShow] = useState(false);
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
-      <div className="p-2 grid  lg:grid-cols-12">
-        <div className="flex lg:flex-col gap-2 lg:col-span-2 order-2 lg:order-none my-2 lg:my-0 ">
+      <div className="p-2 grid lg:grid-cols-12">
+        <div className="flex lg:flex-col gap-2 lg:col-span-2 order-2 md:order-none lg:order-none my-2 lg:my-0 ">
           <img src={product.one} className="w-10/12" />
           <img src={product.two} className="w-10/12" />
           <img src={product.three} className="w-10/12" />

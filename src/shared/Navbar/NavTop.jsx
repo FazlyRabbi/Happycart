@@ -1,17 +1,31 @@
 import React from "react";
-import logo from "../../asstes/img/logo.png";
-import flag from "../../asstes/img/Asset 7.png";
 import { FaRegUserCircle } from "react-icons/fa";
+import flag from "../../asstes/img/Asset 7.png";
+import logo from "../../asstes/img/logo.png";
+
+import { useState } from "react";
+import { useNavigate } from 'react-router-dom';
 
 import {
-  AiOutlineMenu,
-  IoMdLocate,
-  AiOutlineSearch,
   AiFillCaretDown,
-  AiOutlineShoppingCart,
+  AiOutlineMenu,
+  AiOutlineSearch,
+  AiOutlineShoppingCart
 } from "react-icons/ai";
 
 function Navtop({ openNav }) {
+  const navigate = useNavigate();
+  const [searchTag, setSearchTag] = useState("");
+  const SubmitSearch =(e)=>{
+    e.preventDefault()
+
+    if(searchTag ==="") navigate(`/shop`) 
+    if(searchTag){
+      setSearchTag("")
+      navigate(`/shop/${searchTag}`)
+    }
+  }
+ 
   return (
     <>
       {/* {navTop for small device} */}
@@ -40,24 +54,28 @@ function Navtop({ openNav }) {
         </div>
 
         <div className="nav__search px-4 pt-1 ">
-          <div className="search__box flex ">
+          <form method="GET" onSubmit={SubmitSearch} className="search__box flex ">
             <input
               type="text"
               placeholder="Search on Happycart..."
+
+              value={searchTag}
+              onChange={(e) => {
+                setSearchTag(e.target.value);
+              }}
               className="input  grow  p-2 placeholder:text-black placeholder:font-bold rounded-lg  focus:outline-none"
             />
-
-            <span className="bg-[#000] rounded-tr-lg py-3 px-2  rounded-br-lg  cursor-pointer  -ml-2 ">
+            <button onClick={SubmitSearch}  className="bg-[#000] rounded-tr-lg py-3 px-2  rounded-br-lg  cursor-pointer  -ml-2 ">
               <AiOutlineSearch className=" text-[1.3rem]   text-primary font-bold" />
-            </span>
-          </div>
+            </button>
+          </form>
         </div>
       </div>
 
       {/* {navTop for large device} */}
 
       <div className="sm:hidden md:block px-3 bg-primary">
-        <div className="nav__top flex   items-center  h-[3.75rem] " id="top">
+        <div className="nav__top flex   items-center  h-[4rem] " id="top">
           {/* navigation left side  */}
           <div className="nav__left flex items-center   ">
             {/* logo */}
@@ -95,17 +113,20 @@ function Navtop({ openNav }) {
           {/* navigation serchbar */}
 
           <div className="nav__search  grow lg:mr-5 md:mr-1  ">
-            <div className="search__box flex items-center ">
+            <form method="GET" onSubmit={SubmitSearch} className="search__box flex items-center ">
               <input
                 type="text"
+                value={searchTag}
+                onChange={(e) => {
+                  setSearchTag(e.target.value);
+                }}
                 placeholder="Search on Happycart..."
                 className="input grow px-2 lg:py-3 md:py-2 placeholder:text-black placeholder:font-bold rounded-lg focus:outline-none"
               />
-
-              <span className="bg-[#000] rounded-tr-lg py-1 px-1  rounded-br-lg  cursor-pointer  -ml-2 ">
+              <button onClick={SubmitSearch} className="bg-[#000] rounded-tr-lg py-1 px-1  rounded-br-lg  cursor-pointer  -ml-2 ">
                 <AiOutlineSearch className=" lg:text-[2.5rem] md:text-[2rem]  text-primary font-bold" />
-              </span>
-            </div>
+              </button>
+            </form>
           </div>
 
           {/* navigation right */}

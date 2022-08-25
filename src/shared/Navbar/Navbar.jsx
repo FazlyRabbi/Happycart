@@ -1,9 +1,9 @@
 import React from "react";
-import NavTop from "./NavTop";
 import { AiOutlineMenu } from "react-icons/ai";
 import "./navbar.css";
+import NavTop from "./NavTop";
 
-function Navbar() {
+function Navbar({searchInput}) {
   const openNav = () => {
     document.getElementById("mySideNav").style.animation =
       "expand 0.3s forwards";
@@ -26,7 +26,6 @@ function Navbar() {
         </span>
       </a>
 
-      
       <a
         href="#"
         className=" border border-primary
@@ -67,13 +66,13 @@ function Navbar() {
 
   return (
     <nav>
-      <NavTop openNav={openNav} />
+      <NavTop openNav={openNav} searchInput={searchInput} />
       {/* {navbar for mobile device} */}
       <div className="navBar__mobile flex overflow-x-scroll bg-primary  overflow-y-hidden space-x-3 px-3 font-bold snap-x ">
         {NavItems}
       </div>
       {/* {navbar for big device} */}
-{/* 
+      {/* 
       <div className="nav__main flex  justify-left child:text-gray-200 text-[14px]  p-3 bg-secondary text-white">
          {NavItems} 
       </div>  */}
