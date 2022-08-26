@@ -1,6 +1,8 @@
 //importing pages hare
 import { Route, Routes } from "react-router-dom";
 import "./app.css";
+import BlogPageOne from "./pages/Blogs/BlogPageOne";
+import SingleBlog from "./pages/Blogs/SingleBlog";
 import Home from "./pages/Home/Home";
 import Login from "./pages/Login/Login";
 import NotFound from "./pages/NotFoundPage/NotFound";
@@ -25,14 +27,18 @@ function App() {
         </Route>
 
         <Route path="customer">
-          <Route index  element={<CustomerServicesAndHelp/>}/>
+          <Route index element={<CustomerServicesAndHelp />} />
           <Route path="services" element={<CustomerServicesAndHelp />} />
           <Route path="privacy" element={<CustomerPrivacyNotic />} />
         </Route>
-        <Route path="affiliate-program" element={<AffiliateProgram/>}/>
-        
-        <Route path="vendor-register" element={<Vendor_Register/>}/>
-        <Route path="university" element={<University/>}/>
+        <Route path="affiliate-program" element={<AffiliateProgram />} />
+
+        <Route path="vendor-register" element={<Vendor_Register />} />
+        <Route path="university" element={<University />} />
+        <Route path="blog">
+          <Route path="journal" element={<BlogPageOne />} />
+          <Route path="single/journal/:title" element={<SingleBlog />} />
+        </Route>
 
         <Route path="/login" element={<Login />} />
         <Route path="*" element={<NotFound />} />
