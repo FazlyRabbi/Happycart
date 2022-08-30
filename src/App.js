@@ -31,6 +31,8 @@ function App() {
           <Route path="services" element={<CustomerServicesAndHelp />} />
           <Route path="privacy" element={<CustomerPrivacyNotic />} />
         </Route>
+
+        
         <Route path="affiliate-program" element={<AffiliateProgram />} />
 
         <Route path="vendor-register" element={<Vendor_Register />} />
