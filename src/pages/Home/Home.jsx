@@ -1,5 +1,7 @@
 import React from "react";
 import Sidebar from "../../shared/Sidebar/Sidebar";
+import Banner from "./Banner/Banner";
+import Footer from "../../shared/Footer/Footer"
 
 function Home() {
   return (
@@ -9,18 +11,16 @@ function Home() {
       {/* <SingleProduct /> */}
       {/* <SinglePage /> */}
       <div className="container mx-auto">
-        {/* <div className="container mx-auto">
         <Banner />
-        <PopularProductsInPc />
+        {/* <PopularProductsInPc />
         <PopularProductsInBeauty />
-        <Grossary />w
+        <Grossary />
         <TopSellersInToys />
         <TopSellerInBook />
         <BottomSignIn />
-        <BackToTop />
-        <Footer />
-  </div>*/}
+        <BackToTop /> */}
       </div>
+        {/* <Footer /> */}
     </div>
   );
 }

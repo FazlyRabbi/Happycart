@@ -1,8 +1,6 @@
 .sliderMain {
-  background-color: rgb(163, 156, 156);
   position: relative;
   overflow: hidden;
-
 }
 
 .SliderWrapper {
@@ -23,11 +21,8 @@
 .controller {
   position: absolute;
   top: 0%;
-
   cursor: pointer;
-
   z-index: 10;
-
   min-height: 290px;
   min-width: 80px;
   margin-top: 2px;

@@ -1,17 +1,26 @@
 import React from "react";
-
-import SliderMain from "../../Components/SliderMain/SliderMain";
-
-// import carousel photo
+import Slider from "react-slick";
 import b1 from "../../../asstes/img/b1.jpg";
 import b2 from "../../../asstes/img/b2.jpg";
 import b3 from "../../../asstes/img/b3.jpg";
 
-
-function BannerCarousel() {
+function BannerMobile() {
+  const settings = {
+    dots: false,
+    fade: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 2000,
+    arrows: false,
+    autoplaySpeed: 10000,
+    cssEase: "linear"
+  };
   return (
-    <div className="sm:hidden md:block">
-      <SliderMain  className="z-0">
+    <div className="md:hidden sm:block">
+      <Slider {...settings}>
         <div>
           <img src={b1} style={{ width: "100%", height: "100%" }} />
         </div>
@@ -23,9 +32,9 @@ function BannerCarousel() {
         <div>
           <img src={b3} style={{ width: "100%", height: "100%" }} />
         </div>
-      </SliderMain>
+      </Slider>
     </div>
   );
 }
 
-export default BannerCarousel;
+export default BannerMobile;
