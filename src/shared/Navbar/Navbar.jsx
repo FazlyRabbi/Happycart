@@ -69,18 +69,10 @@ function Navbar({ searchInput }) {
   return (
     <nav>
       <NavTop openNav={openNav} searchInput={searchInput} />
-
       {/* {navbar for mobile device} */}
-
       <div className="navBar__mobile flex overflow-x-scroll bg-primary  overflow-y-hidden space-x-3 px-3 font-bold snap-x py-2    items-center ">
         {NavItems}
       </div>
-
-      {/* {navbar for big device} */}
-      {/* 
-      <div className="nav__main flex  justify-left child:text-gray-200 text-[14px]  p-3 bg-secondary text-white">
-         {NavItems} 
-      </div>  */}
     </nav>
   );
 }

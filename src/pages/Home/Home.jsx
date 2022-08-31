@@ -1,27 +1,35 @@
 import React from "react";
 import Sidebar from "../../shared/Sidebar/Sidebar";
 import Banner from "./Banner/Banner";
-import Footer from "../../shared/Footer/Footer"
+import Footer from "../../shared/Footer/Footer";
+import HomeM from "./HomeN/HomeM";
 
 function Home() {
   return (
-    <div>
+    <>
       <Sidebar />
-      {/* <Navbar /> */}
-      {/* <SingleProduct /> */}
-      {/* <SinglePage /> */}
-      <div className="container mx-auto">
-        <Banner />
-        {/* <PopularProductsInPc />
+
+      <div className="home__lg sm:hidden md:block">
+        {/* <SingleProduct /> */}
+        {/* <SinglePage /> */}
+        {/* mobile resposive component out of container */}
+        <div className="container mx-auto">
+          <Banner />
+          {/* <PopularProductsInPc />
         <PopularProductsInBeauty />
         <Grossary />
         <TopSellersInToys />
         <TopSellerInBook />
         <BottomSignIn />
         <BackToTop /> */}
-      </div>
+        </div>
         {/* <Footer /> */}
-    </div>
+      </div>
+
+      <div className="home__M sm:block md:hidden">
+        <HomeM />
+      </div>
+    </>
   );
 }
 

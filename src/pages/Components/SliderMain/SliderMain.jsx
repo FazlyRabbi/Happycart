@@ -98,12 +98,12 @@ function SliderMain({ children }) {
 
       <IoIosArrowForward
         onClick={() => actionHandler("next")}
-        className="controller controller-right"
+        className="controllerr controller-right"
       />
 
       <IoIosArrowBack
         onClick={() => actionHandler("prev")}
-        className="  controller controller-left "
+        className="  controllerr controller-left "
       />
     </section>
   );
