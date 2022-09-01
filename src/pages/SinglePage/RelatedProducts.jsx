@@ -35,7 +35,7 @@ const RelatedProducts = ({ products }) => {
     ],
   };
   return (
-    <div className="p-4 lg:p-10 ">
+    <div className="p-4 lg:p-10">
       <Slider {...settings} className="">
         {products.map((product, index) => {
           return (

@@ -14,8 +14,8 @@ function ImageSection({ product }) {
     },
     largeImage: {
       src: CurImage,
-      width: 800,
-      height: 900,
+      width: 1200,
+      height: 1200,
     },
     shouldUsePositiveSpaceLens: true,
   };
