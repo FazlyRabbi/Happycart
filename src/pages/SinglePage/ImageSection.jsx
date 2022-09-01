@@ -14,10 +14,10 @@ function ImageSection({ product }) {
     },
     largeImage: {
       src: CurImage,
-      width: 1200,
-      height: 1800,
+      width: 800,
+      height: 900,
     },
-    // shouldUsePositiveSpaceLens: true,
+    shouldUsePositiveSpaceLens: true,
   };
   const [show, setShow] = useState(false);
   return (

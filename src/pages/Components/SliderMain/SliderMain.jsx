@@ -1,17 +1,16 @@
-import React, {
-  Children,
-  useState,
-  useLayoutEffect,
-  useRef,
-  useEffect,
-} from "react";
+import React, { useState, useLayoutEffect, useRef, useEffect } from "react";
 
+import b1 from "../../../asstes/img/b1.jpg";
+import b2 from "../../../asstes/img/b2.jpg";
+import b3 from "../../../asstes/img/b3.jpg";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import "./sliderMain.css";
 
 function SliderMain({ children }) {
   const containerRef = useRef();
+
   const [current, setCurrent] = useState(1);
+
   const [translateX, setTranslateX] = useState(0);
 
   const actionHandler = (mode) => {
@@ -55,10 +54,10 @@ function SliderMain({ children }) {
     };
   }, [current, children]);
 
-  // useMemo
+  // // useMemo
   const slides = () => {
     if (children?.length > 1) {
-      let items = Children.map(children, (child, index) => (
+      let items = children.map((child, index) => (
         <li key={index} className="slide">
           {child}
         </li>
@@ -68,7 +67,9 @@ function SliderMain({ children }) {
         <li key={children.length + 1} className="slide">
           {children[children.length - 1]}
         </li>,
+
         ...items,
+
         <li key={children.length + 2} className="slide">
           {children[0]}
         </li>,
@@ -76,13 +77,15 @@ function SliderMain({ children }) {
     }
   };
 
-  // position first element correctly & this will render only ones
+  // // position first element correctly & this will render only ones
   useLayoutEffect(() => {
     setTranslateX(containerRef.current.clientWidth * current);
   }, []);
 
+
+  
   return (
-    <section className="sliderMain">
+    <section className="sliderMain -z-10">
       <ul
         ref={containerRef}
         className="SliderWrapper"
@@ -90,17 +93,17 @@ function SliderMain({ children }) {
           transform: `translateX(-${translateX}px)`,
         }}
       >
-        {slides()}
+       {slides()} 
       </ul>
 
       <IoIosArrowForward
         onClick={() => actionHandler("next")}
-        className="controller controller-right"
+        className="controllerr controller-right"
       />
 
       <IoIosArrowBack
         onClick={() => actionHandler("prev")}
-        className="  controller controller-left "
+        className="  controllerr controller-left "
       />
     </section>
   );

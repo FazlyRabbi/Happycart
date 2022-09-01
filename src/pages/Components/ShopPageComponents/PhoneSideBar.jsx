@@ -5,6 +5,7 @@ const PhoneSideBar = ({ isToggle, setIsToggle }) => {
   const { name } = useParams();
   const [updatedCategory, setUpdatedCategory] = useState();
   const [updateBrand, setUpdatedBrand] = useState();
+
   useEffect(() => {
     const UniqueCagegoryList = [
       ...new Set(ShopApi.map((curelem) => curelem.category.toLowerCase())),"all"
@@ -15,6 +16,8 @@ const PhoneSideBar = ({ isToggle, setIsToggle }) => {
     setUpdatedCategory(UniqueCagegoryList);
     setUpdatedBrand(UniqueBrandList);
   }, []);
+
+  
   return (
     <section
       className={`lg:hidden xl:hidden md:fixed fixed top-0 md:top-0 ${

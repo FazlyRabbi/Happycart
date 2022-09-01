@@ -2,18 +2,16 @@ module.exports = {
   content: ["./src/**/*.{js,jsx}"],
   theme: {
     screens: {
-      sm: '320px',
-      md: '768px',
-      lg: '974px',
-      xl: '1440px',
+      sm: "320px",
+      md: "768px",
+      lg: "974px",
+      xl: "1440px",
     },
     colors: {
       primary: "#FF9900",
       secondary: "#FF8500",
       accent: "#008296",
       neutral: "#EAEDED",
-      "base-100": "#FFFFFF",
-      white: "#fff",
       success: "#F7F7F7",
       warning: "#FBBD23",
       error: "#F87272",
