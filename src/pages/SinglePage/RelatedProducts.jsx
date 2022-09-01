@@ -8,11 +8,6 @@ const RelatedProducts = ({ products }) => {
     speed: 500,
     slidesToShow: 5,
     slidesToScroll: 2,
-    autoplay: true,
-    speed: 6000,
-    autoplaySpeed: 6000,
-    cssEase: "linear",
-    pauseOnHover: true,
     responsive: [
       {
         breakpoint: 1024,
@@ -40,8 +35,8 @@ const RelatedProducts = ({ products }) => {
     ],
   };
   return (
-    <div className="p-4 lg:p-10 max-h-max">
-      <Slider {...settings}>
+    <div className="p-4 lg:p-10 ">
+      <Slider {...settings} className="">
         {products.map((product, index) => {
           return (
             <div key={index} className="mx-2 p-2 ">

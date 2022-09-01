@@ -11,11 +11,6 @@ const CompanyProducts = ({ ProfileProductCategory, products }) => {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 2,
-    // autoplay: true,
-    // speed: 6000,
-    // autoplaySpeed: 6000,
-    // cssEase: "linear",
-    pauseOnHover: true,
     responsive: [
       {
         breakpoint: 1080,
@@ -44,6 +39,9 @@ const CompanyProducts = ({ ProfileProductCategory, products }) => {
   };
   return (
     <section className="">
+      <div className="mb-5 bg-primary px-2">
+        <h1 className="uppercase font-bold text-xl">Company Product</h1>
+      </div>
       <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-4 2xl:grid-cols-4 p-4 gap-2">
         <div className="md:col-span-1 lg:col-span-1 2xl:col-span-1 col-span-4">
           <ProductCategoryCard curElem={ProfileProductCategory[0]} />

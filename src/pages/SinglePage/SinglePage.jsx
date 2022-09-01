@@ -1,5 +1,4 @@
 import React from "react";
-import PathName from "./../../shared/PathName";
 import Comments from "./Comments";
 import CompanyProfile from "./CompanyProfile/CompanyProfile";
 import ImageSection from "./ImageSection";
@@ -20,8 +19,6 @@ const SinglePage = () => {
       <div className="">
         {/* offer banner */}
         <TopOfferBanner />
-        {/* product path */}
-        <PathName />
         {/* porject image with details */}
         <div className="mt-4 px-4">
           <ImageSection product={ProductDetail} />
