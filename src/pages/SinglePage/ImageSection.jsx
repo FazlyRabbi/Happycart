@@ -1,23 +1,48 @@
 import React from "react";
 import { useState } from "react";
+import ReactImageMagnify from "react-image-magnify";
 
 function ImageSection({ product }) {
+  const [CurImage, setCurImage] = useState(product.mainImage);
+  const imageProps = {
+    smallImage: {
+      alt: "Phasellus laoreet",
+      isFluidWidth: false,
+      src: CurImage,
+      width: 320,
+      height: 360,
+    },
+    largeImage: {
+      src: CurImage,
+      width: 1200,
+      height: 1800,
+    },
+    // shouldUsePositiveSpaceLens: true,
+  };
   const [show, setShow] = useState(false);
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
-      <div className="p-2 grid lg:grid-cols-12">
-        <div className="flex lg:flex-col gap-2 lg:col-span-2 order-2 md:order-none lg:order-none my-2 lg:my-0 ">
-          <img src={product.one} className="w-10/12" />
-          <img src={product.two} className="w-10/12" />
-          <img src={product.three} className="w-10/12" />
-          <img src={product.four} className="w-10/12" />
-          <img src={product.five} className="w-10/12" />
+    <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-2">
+      <div className="p-2 grid grid-cols-12 gap-2 ">
+        <div className="col-span-12 sm:col-span-12  md:col-span-2 lg:col-span-2 xl:col-span-2 flex flex-row sm:flex-row md:flex-col lg:flex-col xl:flex-col justify-around order-2 xl:order-1 lg:order-1 md:order-1 gap-4 w-full">
+          {product.images.map((image,index) => {
+            return (
+              <img
+              key={index}
+                src={image.image}
+                alt=""
+                onClick={() => {
+                  setCurImage(image.image);
+                }}
+                className="cursor-pointer w-[120px]"
+              />
+            );
+          })}
         </div>
-        <img
-          src={product.mainImage}
-          className="max-w-full col-span-10 w-[170px] md:w-full "
-        />
+        <div className="col-span-10  order-1 xl:order-2 lg:order-2 w-full p-2 ]">
+          <ReactImageMagnify {...imageProps} className="" />
+        </div>
       </div>
+
       <div className="col-span-12 lg:col-span-1">
         <h2 className="text-xl mb-2">{product.details.title}</h2>
         <a className="text-blue-400 font-bold mb-2">

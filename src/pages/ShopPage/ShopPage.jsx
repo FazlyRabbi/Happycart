@@ -56,7 +56,7 @@ const shopPage = ({}) => {
         x.rateing == ratingFilter.four ||
         x.rateing == ratingFilter.five ||
         x.condition == conditionFilter.new ||
-        x.condition == conditionFilter.used 
+        x.condition == conditionFilter.used
     );
     const searchProduct = ShopApi.filter((val) => {
       if (name == "") {
@@ -83,19 +83,20 @@ const shopPage = ({}) => {
             isToggle ? "float-right mr-5" : "ml-5"
           }  mt-5 xl:hidden`}
         >
+        
           <svg
-            onClick={() => setIsToggle(!isToggle)}
+          onClick={() => setIsToggle(!isToggle)}
             xmlns="http://www.w3.org/2000/svg"
-            className="h-10 w-10 cursor-pointer hover:text-secondary hover:scale-110"
             fill="none"
             viewBox="0 0 24 24"
+            strokeWidth={1.5}
             stroke="currentColor"
-            strokeWidth={2}
+            className="w-10 h-10 cursor-pointer text-primary"
           >
             <path
               strokeLinecap="round"
               strokeLinejoin="round"
-              d="M4 6h16M4 12h16M4 18h16"
+              d="M6 13.5V3.75m0 9.75a1.5 1.5 0 010 3m0-3a1.5 1.5 0 000 3m0 3.75V16.5m12-3V3.75m0 9.75a1.5 1.5 0 010 3m0-3a1.5 1.5 0 000 3m0 3.75V16.5m-6-9V3.75m0 3.75a1.5 1.5 0 010 3m0-3a1.5 1.5 0 000 3m0 9.75V10.5"
             />
           </svg>
         </h1>

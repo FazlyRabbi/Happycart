@@ -1,10 +1,20 @@
 {
   "mainImage": "https://m.media-amazon.com/images/I/61CGHv6kmWL._AC_SL1000_.jpg",
-  "one": "https://m.media-amazon.com/images/I/51q0meZK6WL._AC_US40_.jpg",
-  "two": "https://m.media-amazon.com/images/I/51q0meZK6WL._AC_US40_.jpg",
-  "tree": "https://m.media-amazon.com/images/I/51q0meZK6WL._AC_US40_.jpg",
-  "four": "https://m.media-amazon.com/images/I/51q0meZK6WL._AC_US40_.jpg",
-  "five": "https://m.media-amazon.com/images/I/51q0meZK6WL._AC_US40_.jpg",
+  "images": [
+    {
+      "image": "https://th.bing.com/th/id/R.16ebac9d33b7aacfc01fb284411ac256?rik=s6Ld9R2IfLANxQ&pid=ImgRaw&r=0"
+    },
+    {
+      "image": "https://th.bing.com/th/id/OIP._aTgUAgcWIFKwIeu7xVHrwHaFD?pid=ImgDet&rs=1"
+    },
+    {
+      "image": "https://th.bing.com/th/id/OIP.Ykue89_HFuSkDb38s1H1oQHaD4?w=292&h=180&c=7&r=0&o=5&pid=1.7"
+    },
+    {
+      "image": "https://th.bing.com/th/id/OIP.yIPRcsWG_AsZY25AY59PjAHaFc?pid=ImgDet&w=800&h=588&rs=1"
+    }
+  ],
+
   "details": {
     "title": "Fiodio 7.1 Surround Sound Gaming Headset with LED Effect, Stereo Headphones with Comfortable Ergonomic Earmuff and Microphone",
     "shop_name": "Visit the Hp Store",

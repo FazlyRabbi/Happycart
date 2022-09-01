@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import ShopApi from "../../../apis/shopApi.json";
-
+import { useNavigate } from "react-router-dom";
 const ShopPageSidebar = ({ allDetails }) => {
+  const router = useNavigate();
   const [updatedCategory, setUpdatedCategory] = useState();
   const [updateBrand, setUpdatedBrand] = useState();
   useEffect(() => {
@@ -77,6 +78,7 @@ const ShopPageSidebar = ({ allDetails }) => {
                     id={val}
                     onClick={() => {
                       FilterCategory(`${val}`);
+                      router.push("/shop/#");
                     }}
                   />
                   <label
