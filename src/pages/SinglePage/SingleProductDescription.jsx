@@ -21,14 +21,14 @@ function SingleProductDescription() {
             {description.slice(601, -1)}
           </p>
           <button
-            className="bg-blue-400 mt-[20px] text-white rounded-lg shadow-md px-6 py-1 text-xl "
+            className="bg-accent mt-[20px] text-success rounded-lg shadow-md px-6 py-1 text-xl "
             onClick={() => setShow(!show)}
           >
             {show ? "Hide" : "Show more"}
           </button>
         </div>
         <div className="md:col-span-4 mt-[50px]">
-          <div className="bg-gray-800 rounded-md mb-3 w-full h-[200px] max-h-[250px]"></div>
+          <div className="bg-neutral rounded-md mb-3 w-full h-[200px] max-h-[250px]"></div>
           <div className="flex justify-end">
             <p>Sponsored</p>
           </div>
