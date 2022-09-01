@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-html,body {
+html,body,* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -17,11 +17,7 @@ html,body {
     url("./asstes/fonts/AmazonEmber/AmazonEmber_Rg.ttf") format("truetype");
 } 
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 
 
  .slick-track {
