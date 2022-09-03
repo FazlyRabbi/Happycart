@@ -14,14 +14,14 @@ function ImageSection({ product }) {
     },
     largeImage: {
       src: CurImage,
-      width: 800,
-      height: 1200,
+      width: 1100,
+      height: 1700,
     },
     shouldUsePositiveSpaceLens: true,
   };
   const [show, setShow] = useState(false);
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-2">
+    <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-2 image_secction_overflow">
       <div className="p-2 grid grid-cols-12 gap-2 ">
         <div className="col-span-10 sm:col-span-10  md:col-span-2 lg:col-span-2 xl:col-span-2 flex flex-row sm:flex-row md:flex-col lg:flex-col xl:flex-col justify-around order-2 xl:order-1 lg:order-1 md:order-1 gap-4 w-[90vw] sm:w-[90vw]  md:w-max lg:w-max  xl:w-max ">
           {product.images.map((image,index) => {
