@@ -1,104 +1,58 @@
-import { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
-import ShopApi from "../../../apis/shopApi.json";
+import { useContext } from "react";
+import { FilterContext } from "../../../Contexts/FilterContext";
+import ShopPageSidebar from "./ShopPageSidebar";
 const PhoneSideBar = ({ isToggle, setIsToggle }) => {
-  const { name } = useParams();
-  const [updatedCategory, setUpdatedCategory] = useState();
-  const [updateBrand, setUpdatedBrand] = useState();
-
-  useEffect(() => {
-    const UniqueCagegoryList = [
-      ...new Set(ShopApi.map((curelem) => curelem.category.toLowerCase())),"all"
-    ];
-    const UniqueBrandList = [
-      ...new Set(ShopApi.map((curelem) => curelem.brand)),
-    ];
-    setUpdatedCategory(UniqueCagegoryList);
-    setUpdatedBrand(UniqueBrandList);
-  }, []);
-
-  
+  const [
+    categoryFilter,
+    brandFilter,
+    ratingFilter,
+    conditionFilter,
+    filterProject,
+    setConditionFilter,
+    setRatingFilter,
+    setCatoryFilter,
+    setBrandFilter,
+    setFilterProject,
+  ] = useContext(FilterContext);
   return (
-    <section
-      className={`lg:hidden xl:hidden md:fixed fixed top-0 md:top-0 ${
-        isToggle ? "left-0 transition duration-200 ease-linear" : "-left-[100%] transition duration-200 ease-linear"
-      }  md:bottom-0 bottom-0 z-10 bg-neutral w-8/12 p-2 md:w-6/12  pt-10`}
-    >
-      <h1 className="text-2xl lg:hidden mr-5 mt-2 float-right xl:hidden">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-10 w-10 hover:scale-110 cursor-pointer"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          strokeWidth={2}
-          onClick={() => setIsToggle(false)}
+    <>
+      {isToggle && (
+        <div
+          className="fixed top-0 left-0  h-screen overflow-auto z-10 w-full  text-success block md:block lg:hidden xl:hidden"
+          style={{ background: "rgba(0,0,0,0.3)" }}
         >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M6 18L18 6M6 6l12 12"
-          />
-        </svg>
-      </h1>
-      {/* Departments List */}
-      <div className="px-2">
-        <h1 className="font-semibold text-2xl">Department</h1>
-        <ul className="mt-2 pl-4 space-y-1 flex flex-col">
-          {updatedCategory &&
-            updatedCategory.sort().map((val, index) => {
-              return (
-                <Link to={`/shop/${val}`} key={index}>
-                  <li
-                    onClick={() => setIsToggle(false)}
-                    className={`capitalize text-xl hover:text-secondary transition duration-150 ease-linear`}
-                  >
-                    {val}
-                  </li>
-                </Link>
-              );
-            })}
-        </ul>
-      </div>
-      {/* Brand name List */}
-      <div className="px-2 mt-4">
-        <h1 className="font-semibold text-2xl">Featured Brands</h1>
-        <ul className="mt-2 pl-4 space-y-1 flex flex-col">
-          {updateBrand &&
-            updateBrand.sort().map((val, index) => {
-              return (
-                <Link to={`/shop/${val}`} key={index}>
-                  <li
-                    onClick={() => setIsToggle(false)}
-                    className="capitalize text-xl hover:text-secondary transition duration-150 ease-linear"
-                  >
-                    {val}
-                  </li>
-                </Link>
-              );
-            })}
-        </ul>
-      </div>
-      {/* Condition */}
-      <div className="px-2 mt-4">
-        <h1 className="font-semibold text-2xl">Conditions</h1>
-        <ul className="mt-2 pl-4 space-y-1 flex flex-col">
-          <Link to={`/shop/new`}>
-            <li
-              onClick={() => setIsToggle(false)}
-              className="capitalize text-xl hover:text-secondary transition duration-150 ease-linear"
-            >
-              New
-            </li>
-          </Link>{" "}
-          <Link to={`/shop/used`}>
-            <li className="capitalize text-xl hover:text-secondary transition duration-150 ease-linear">
-              Used
-            </li>
-          </Link>
-        </ul>
-      </div>
-    </section>
+           <svg
+            onClick={() => setIsToggle(!isToggle)}
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="w-10 h-10 cursor-pointer text-success float-right mr-12 mt-6"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M6 13.5V3.75m0 9.75a1.5 1.5 0 010 3m0-3a1.5 1.5 0 000 3m0 3.75V16.5m12-3V3.75m0 9.75a1.5 1.5 0 010 3m0-3a1.5 1.5 0 000 3m0 3.75V16.5m-6-9V3.75m0 3.75a1.5 1.5 0 010 3m0-3a1.5 1.5 0 000 3m0 9.75V10.5"
+            />
+          </svg>
+          <div className="bg-accent w-6/12 h-[100%] opacity-100 p-2">
+            <ShopPageSidebar
+              allDetails={[
+                categoryFilter,
+                brandFilter,
+                ratingFilter,
+                conditionFilter,
+                setConditionFilter,
+                setRatingFilter,
+                setCatoryFilter,
+                setBrandFilter,
+              ]}
+            />
+          </div>
+        </div>
+      )}
+    </>
   );
 };
 

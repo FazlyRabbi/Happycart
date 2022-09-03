@@ -1,63 +1,26 @@
 import React, { useEffect, useState } from "react";
+import { useContext } from "react";
 import { useParams } from "react-router-dom";
 import ShopApi from "../../apis/shopApi.json";
+import { FilterContext } from "../../Contexts/FilterContext";
 import PhoneSideBar from "../Components/ShopPageComponents/PhoneSideBar";
 import ShopPageCard from "../Components/ShopPageComponents/ShopPageCard";
 import ShopPageSidebar from "../Components/ShopPageComponents/ShopPageSidebar";
 const shopPage = ({}) => {
+  const [categoryFilter,
+    brandFilter,
+    ratingFilter,
+    conditionFilter,
+    filterProject,
+    setConditionFilter,
+    setRatingFilter,
+    setCatoryFilter,
+    setBrandFilter,
+    setFilterProject,] = useContext(FilterContext);
   const { name } = useParams();
   const [isToggle, setIsToggle] = useState(false);
-  const [filterProject, setFilterProject] = useState();
   const [searchFilterProject, setSearchFilterProject] = useState();
-  const [brandFilter, setBrandFilter] = useState({
-    apple: "",
-    asus: "",
-    hp: "",
-    nick: "",
-    pran: "",
-    sony: "",
-  });
-  const [conditionFilter, setConditionFilter] = useState({ new: "", used: "" });
-  const [ratingFilter, setRatingFilter] = useState({
-    one: "",
-    two: "",
-    three: "",
-    four: "",
-    five: "",
-  });
-  const [categoryFilter, setCatoryFilter] = useState({
-    grossery: "",
-    headphone: "",
-    laptop: "",
-    mobile: "",
-    shoes: "",
-    watch: "",
-  });
-
   useEffect(() => {
-    // fetch categoryes
-    const product = ShopApi.filter(
-      (x) =>
-        x.category == categoryFilter.grossery ||
-        x.category == categoryFilter.headphone ||
-        x.category == categoryFilter.laptop ||
-        x.category == categoryFilter.mobile ||
-        x.category == categoryFilter.shoes ||
-        x.category == categoryFilter.watch ||
-        x.brand == brandFilter.apple ||
-        x.brand == brandFilter.asus ||
-        x.brand == brandFilter.hp ||
-        x.brand == brandFilter.nick ||
-        x.brand == brandFilter.pran ||
-        x.brand == brandFilter.sony ||
-        x.rateing == ratingFilter.one ||
-        x.rateing == ratingFilter.two ||
-        x.rateing == ratingFilter.three ||
-        x.rateing == ratingFilter.four ||
-        x.rateing == ratingFilter.five ||
-        x.condition == conditionFilter.new ||
-        x.condition == conditionFilter.used
-    );
     const searchProduct = ShopApi.filter((val) => {
       if (name == "") {
         return false;
@@ -71,7 +34,7 @@ const shopPage = ({}) => {
         return val;
       }
     });
-    setFilterProject(product);
+    // setFilterProject(product);
     setSearchFilterProject(searchProduct);
     console.log(searchFilterProject);
   }, [categoryFilter, brandFilter, ratingFilter, conditionFilter, name]);
@@ -83,9 +46,8 @@ const shopPage = ({}) => {
             isToggle ? "float-right mr-5" : "ml-5"
           }  mt-5 xl:hidden`}
         >
-        
           <svg
-          onClick={() => setIsToggle(!isToggle)}
+            onClick={() => setIsToggle(!isToggle)}
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
