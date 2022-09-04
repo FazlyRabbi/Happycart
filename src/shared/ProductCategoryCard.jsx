@@ -12,7 +12,7 @@ const ProductCategoryCard = ({ curElem }) => {
             <div className="text-center" key={index}>
               <img
                 src={curList.image}
-                className="w-10/12 max-h-[120px] object-fill rounded-sm"
+                className=" mx-auto  h-[120px] rounded-sm "
                 alt=""
               />
               <h1 className="text-xl mt-0.5 ">{curList.name}</h1>

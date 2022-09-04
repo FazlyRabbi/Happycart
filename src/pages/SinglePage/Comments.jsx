@@ -29,7 +29,7 @@ const Comments = ({ comments }) => {
                   stroke="currentColor"
                   strokeWidth="2"
                   onClick={() => {
-                    setCount((prev) => prev + 1);
+                    console.log("Fetch data and update");
                   }}
                 >
                   <path
@@ -38,7 +38,7 @@ const Comments = ({ comments }) => {
                     d="M5 15l7-7 7 7"
                   />
                 </svg>
-                <h1 className="text-2xl font-bold">{count}</h1>
+                <h1 className="text-2xl font-bold">{elem.vote}</h1>
                 <h1 className="text-xl font-bold">Votes</h1>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -48,7 +48,7 @@ const Comments = ({ comments }) => {
                   stroke="currentColor"
                   strokeWidth="2"
                   onClick={() => {
-                    setCount((prev) => prev - 1);
+                    console.log("Fetch data and update");
                   }}
                 >
                   <path

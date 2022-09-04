@@ -1,23 +1,48 @@
 import React from "react";
 import { useState } from "react";
+import ReactImageMagnify from "react-image-magnify";
 
 function ImageSection({ product }) {
+  const [CurImage, setCurImage] = useState(product.mainImage);
+  const imageProps = {
+    smallImage: {
+      alt: "Phasellus laoreet",
+      isFluidWidth: false,
+      src: CurImage,
+      width: 320,
+      height: 360,
+    },
+    largeImage: {
+      src: CurImage,
+      width: 1100,
+      height: 1700,
+    },
+    shouldUsePositiveSpaceLens: true,
+  };
   const [show, setShow] = useState(false);
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
-      <div className="p-2 grid lg:grid-cols-12">
-        <div className="flex lg:flex-col gap-2 lg:col-span-2 order-2 md:order-none lg:order-none my-2 lg:my-0 ">
-          <img src={product.one} className="w-10/12" />
-          <img src={product.two} className="w-10/12" />
-          <img src={product.three} className="w-10/12" />
-          <img src={product.four} className="w-10/12" />
-          <img src={product.five} className="w-10/12" />
+    <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-2 image_secction_overflow">
+      <div className="p-2 grid grid-cols-12 gap-2 ">
+        <div className="col-span-10 sm:col-span-10  md:col-span-2 lg:col-span-2 xl:col-span-2 flex flex-row sm:flex-row md:flex-col lg:flex-col xl:flex-col justify-around order-2 xl:order-1 lg:order-1 md:order-1 gap-4 w-[90vw] sm:w-[90vw]  md:w-max lg:w-max  xl:w-max ">
+          {product.images.map((image,index) => {
+            return (
+              <img
+              key={index}
+                src={image.image}
+                alt=""
+                onClick={() => {
+                  setCurImage(image.image);
+                }}
+                className="cursor-pointer w-16 mx-auto"
+              />
+            );
+          })}
         </div>
-        <img
-          src={product.mainImage}
-          className="max-w-full col-span-10 w-[170px] md:w-full "
-        />
+        <div className="col-span-10  order-1 md:order-2 xl:order-2 lg:order-2 p-2 ] mx-auto w-max">
+          <ReactImageMagnify {...imageProps}/>
+        </div>
       </div>
+
       <div className="col-span-12 lg:col-span-1">
         <h2 className="text-xl mb-2">{product.details.title}</h2>
         <a className="text-blue-400 font-bold mb-2">
@@ -66,7 +91,7 @@ function ImageSection({ product }) {
           </div>
         </div>
         <button
-          className="bg-blue-500 text-white rounded-md py-2 px-4"
+          className="bg-accent text-success rounded-md py-2 px-4"
           onClick={() => setShow(!show)}
         >
           {show ? "Hide" : "Show More"}
@@ -92,7 +117,7 @@ function ImageSection({ product }) {
           </p>
           <br />
           <div className="flex justify-center">
-            <button className="bg-yellow-400 w-8/12 text-black rounded-full py-2 px-4">
+            <button className="bg-primary w-8/12 text-black rounded-full py-2 px-4">
               Add to Cart
             </button>
             <br />
@@ -100,7 +125,7 @@ function ImageSection({ product }) {
         </div>
         <br />
         <div className="border-2 border-gray-800 p-4 rounded-md flex justify-center">
-          <button className="py-3 px-4 bg-gray-100 border-2 border-gray-500 w-9/12 rounded-md">
+          <button className="py-3 px-4 bg-success border-2 border-neutral w-9/12 rounded-md">
             Add to Cart List
           </button>
         </div>

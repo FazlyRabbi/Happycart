@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import ShopApi from "../../../apis/shopApi.json";
-
+import { useNavigate } from "react-router-dom";
 const ShopPageSidebar = ({ allDetails }) => {
+  const router = useNavigate();
   const [updatedCategory, setUpdatedCategory] = useState();
   const [updateBrand, setUpdatedBrand] = useState();
   useEffect(() => {
@@ -59,7 +60,6 @@ const ShopPageSidebar = ({ allDetails }) => {
       setCatoryFilter({ ...categoryFilter, [elemName]: "" });
     }
   };
-  const FilterCondition = () => {};
   return (
     <section className="Side_bar ">
       {/* Departments List */}
@@ -77,6 +77,7 @@ const ShopPageSidebar = ({ allDetails }) => {
                     id={val}
                     onClick={() => {
                       FilterCategory(`${val}`);
+                      router("/shop/#");
                     }}
                   />
                   <label
@@ -104,6 +105,8 @@ const ShopPageSidebar = ({ allDetails }) => {
                     value=""
                     onClick={() => {
                       FilterBrand(`${val}`);
+                      router("/shop/#");
+
                     }}
                     id={val}
                   />
@@ -129,7 +132,8 @@ const ShopPageSidebar = ({ allDetails }) => {
               value=""
               id="new"
               onClick={() => {
-                FilterCondition("new");
+                // FilterCondition("new");
+                router("/shop/#");
               }}
             />
             <label
@@ -145,6 +149,10 @@ const ShopPageSidebar = ({ allDetails }) => {
               type="checkbox"
               value=""
               id="used"
+              onClick={() => {
+                // FilterCondition("used");
+                router("/shop/#");
+              }}
             />
             <label
               className="form-check-label inline-block text-black text-xl capitalize cursor-pointer hover:text-primary transition duration-200 ease-linear"

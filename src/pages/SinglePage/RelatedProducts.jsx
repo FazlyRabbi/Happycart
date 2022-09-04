@@ -1,3 +1,4 @@
+
 import Slider from "react-slick";
 import ProductCard from "./../../shared/ProductCard/ProductCard";
 const RelatedProducts = ({ products }) => {

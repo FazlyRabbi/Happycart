@@ -2,17 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+
+html,body,* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* overflow-x: hidden; */
+  scroll-behavior: smooth;
+}
+.image_secction_overflow{
+  width: 100% !important;
+  overflow-x: hidden;
+}
+
+
 @font-face {
   font-family: "AmazonEmber";
   src: local("AmazonEmber"),
     url("./asstes/fonts/AmazonEmber/AmazonEmber_Rg.ttf") format("truetype");
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 
 body {
   background-color: #eaeded;
