@@ -4,7 +4,7 @@ import SwiperSliderCardBox from '../../shared/SwiperSliderCardBox'
 const RelatedProducts = ({products}) => {
   return (
     <div>
-      <SwiperSliderCardBox products={products} responsive={[2,2,4,5]}/>
+      <SwiperSliderCardBox products={products} responsive={[2,2,4,5]} />
     </div>
   )
 }
