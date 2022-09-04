@@ -3,7 +3,7 @@ import Slider from "../../Components/Slider/Slider";
 
 function PopularProductsInPc() {
   return (
-    <div className="lg:mt-[39rem] md:mt-[41rem] xl:mx-6 sm:mx-4  bg-[#fff]  ">
+    <div className="lg:mt-[39rem] md:mt-[44rem] xl:mx-6 sm:mx-4  bg-[#fff]  ">
       <Slider
         data={{
           title: "Popular products in Pc ",
