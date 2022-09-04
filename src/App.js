@@ -37,6 +37,7 @@ function App() {
 
         <Route path="vendor-register" element={<Vendor_Register />} />
         <Route path="university" element={<University />} />
+      
         <Route path="blog">
           <Route path="journal" element={<BlogPageOne />} />
           <Route path="single/journal/:title" element={<SingleBlog />} />

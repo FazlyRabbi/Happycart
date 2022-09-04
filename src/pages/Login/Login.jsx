@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import Navbar from "./../../shared/Navbar/Navbar";
+
 
 const Login = () => {
   const [steps, setSteps] = useState(1);
@@ -40,7 +40,6 @@ const Login = () => {
 
   return (
     <>
-      <Navbar />
       <section className="p-2 md:p-6 lg:p-6 xl:p-6 my-10">
         {steps === 1 && (
           <>

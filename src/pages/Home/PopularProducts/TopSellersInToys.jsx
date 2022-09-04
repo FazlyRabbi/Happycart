@@ -3,7 +3,7 @@ import Slider from "../../Components/Slider/Slider";
 
 function TopSellersInToys() {
   return (
-    <div className="mt-7 mx-[15px]">
+    <div className="mt-[1rem] xl:mx-6 sm:mx-4  bg-[#fff]">
       <Slider
         data={{
           title: "Popular products in Toy ",
