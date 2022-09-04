@@ -1,0 +1,50 @@
+
+
+
+const arr = ["https://srjwwstg.wpengine.com/wp-content/uploads/2022/08/About-Jason.jpeg 1080w, https://srjwwstg.wpengine.com/wp-content/uploads/2022/08/About-Jason-240x300.jpeg 240w, https://srjwwstg.wpengine.com/wp-content/uploads/2022/08/About-Jason-819x1024.jpeg 819w, https://srjwwstg.wpengine.com/wp-content/uploads/2022/08/About-Jason-768x960.jpeg 768w", 
+
+
+"https://srjwwstg.wpengine.com/wp-content/uploads/2022/08/About-Shaun.jpeg 1080w, https://srjwwstg.wpengine.com/wp-content/uploads/2022/08/About-Shaun-240x300.jpeg 240w, https://srjwwstg.wpengine.com/wp-content/uploads/2022/08/About-Shaun-819x1024.jpeg 819w, https://srjwwstg.wpengine.com/wp-content/uploads/2022/08/About-Shaun-768x960.jpeg 768w",
+
+
+"https://srjwwstg.wpengine.com/wp-content/uploads/2022/08/About-cheryl.jpeg 1080w, https://srjwwstg.wpengine.com/wp-content/uploads/2022/08/About-cheryl-240x300.jpeg 240w, https://srjwwstg.wpengine.com/wp-content/uploads/2022/08/About-cheryl-819x1024.jpeg 819w, https://srjwwstg.wpengine.com/wp-content/uploads/2022/08/About-cheryl-768x960.jpeg 768w",
+
+
+"https://srjwwstg.wpengine.com/wp-content/uploads/2022/08/Steven.jpeg 1080w, https://srjwwstg.wpengine.com/wp-content/uploads/2022/08/Steven-240x300.jpeg 240w, https://srjwwstg.wpengine.com/wp-content/uploads/2022/08/Steven-819x1024.jpeg 819w, https://srjwwstg.wpengine.com/wp-content/uploads/2022/08/Steven-768x960.jpeg 768w",
+
+"https://srjwwstg.wpengine.com/wp-content/uploads/2022/08/Tracy.jpeg 1080w, https://srjwwstg.wpengine.com/wp-content/uploads/2022/08/Tracy-240x300.jpeg 240w, https://srjwwstg.wpengine.com/wp-content/uploads/2022/08/Tracy-819x1024.jpeg 819w, https://srjwwstg.wpengine.com/wp-content/uploads/2022/08/Tracy-768x960.jpeg 768w",
+
+
+
+"https://srjwwstg.wpengine.com/wp-content/uploads/2022/08/Robyn.jpeg 1080w, https://srjwwstg.wpengine.com/wp-content/uploads/2022/08/Robyn-240x300.jpeg 240w, https://srjwwstg.wpengine.com/wp-content/uploads/2022/08/Robyn-819x1024.jpeg 819w, https://srjwwstg.wpengine.com/wp-content/uploads/2022/08/Robyn-768x960.jpeg 768w",
+
+
+"https://srjwwstg.wpengine.com/wp-content/uploads/2022/08/Katrina.jpeg 1080w, https://srjwwstg.wpengine.com/wp-content/uploads/2022/08/Katrina-240x300.jpeg 240w, https://srjwwstg.wpengine.com/wp-content/uploads/2022/08/Katrina-819x1024.jpeg 819w, https://srjwwstg.wpengine.com/wp-content/uploads/2022/08/Katrina-768x960.jpeg 768w",
+
+
+"https://srjwwstg.wpengine.com/wp-content/uploads/2022/08/Karen.jpeg 1080w, https://srjwwstg.wpengine.com/wp-content/uploads/2022/08/Karen-240x300.jpeg 240w, https://srjwwstg.wpengine.com/wp-content/uploads/2022/08/Karen-819x1024.jpeg 819w, https://srjwwstg.wpengine.com/wp-content/uploads/2022/08/Karen-768x960.jpeg 768w",
+
+
+
+
+
+
+"https://srjwwstg.wpengine.com/wp-content/uploads/2022/08/John.jpeg 1080w, https://srjwwstg.wpengine.com/wp-content/uploads/2022/08/John-240x300.jpeg 240w, https://srjwwstg.wpengine.com/wp-content/uploads/2022/08/John-819x1024.jpeg 819w, https://srjwwstg.wpengine.com/wp-content/uploads/2022/08/John-768x960.jpeg 768w",
+
+"https://srjwwstg.wpengine.com/wp-content/uploads/2022/08/Andrew.jpeg 1080w, https://srjwwstg.wpengine.com/wp-content/uploads/2022/08/Andrew-240x300.jpeg 240w, https://srjwwstg.wpengine.com/wp-content/uploads/2022/08/Andrew-819x1024.jpeg 819w, https://srjwwstg.wpengine.com/wp-content/uploads/2022/08/Andrew-768x960.jpeg 768w",
+
+"https://srjwwstg.wpengine.com/wp-content/uploads/2022/08/Navin_Home.jpeg 1080w, https://srjwwstg.wpengine.com/wp-content/uploads/2022/08/Navin_Home-240x300.jpeg 240w, https://srjwwstg.wpengine.com/wp-content/uploads/2022/08/Navin_Home-819x1024.jpeg 819w, https://srjwwstg.wpengine.com/wp-content/uploads/2022/08/Navin_Home-768x960.jpeg 768w"
+
+
+
+
+
+
+
+]
+
+
+let shuffled = arr.sort(() => 0.5 - Math.random())
+
+let newArr = shuffled.slice(0,3);
+

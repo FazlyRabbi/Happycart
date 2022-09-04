@@ -82,10 +82,8 @@ function SliderMain({ children }) {
     setTranslateX(containerRef.current.clientWidth * current);
   }, []);
 
-
-  
   return (
-    <section className="sliderMain -z-10">
+    <section className="sliderMain min-h-[full]">
       <ul
         ref={containerRef}
         className="SliderWrapper"
@@ -98,12 +96,12 @@ function SliderMain({ children }) {
 
       <IoIosArrowForward
         onClick={() => actionHandler("next")}
-        className="controllerr controller-right"
+        className="controllerr controller-right xl:min-h-[315px] lg:min-h-[325px] md:min-h-[200px]"
       />
 
       <IoIosArrowBack
         onClick={() => actionHandler("prev")}
-        className="  controllerr controller-left "
+        className="  controllerr controller-left xl:min-h-[315px]  lg:min-h-[325px] md:min-h-[200px]"
       />
     </section>
   );

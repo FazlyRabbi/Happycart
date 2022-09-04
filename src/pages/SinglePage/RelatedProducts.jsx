@@ -8,11 +8,6 @@ const RelatedProducts = ({ products }) => {
     speed: 500,
     slidesToShow: 5,
     slidesToScroll: 2,
-    autoplay: true,
-    speed: 6000,
-    autoplaySpeed: 6000,
-    cssEase: "linear",
-    pauseOnHover: true,
     responsive: [
       {
         breakpoint: 1024,
@@ -55,3 +50,5 @@ const RelatedProducts = ({ products }) => {
 };
 
 export default RelatedProducts;
+
+

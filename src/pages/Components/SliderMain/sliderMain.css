@@ -20,11 +20,9 @@
 
 .controllerr {
   position: absolute;
-  top: 0%;
+  top: 0;
   cursor: pointer;
-  z-index:50;
-  min-height: 290px;
-  min-width: 80px;
+  min-width: 60px;
   margin-top: 2px;
   color:#000;
 }
