@@ -117,7 +117,9 @@ function ImageSection({ product }) {
           </p>
           <br />
           <div className="flex justify-center">
-            <button className="bg-primary w-8/12 text-black rounded-full py-2 px-4">
+            <button className="bg-primary w-8/12 text-black rounded-full py-2 px-4" onClick={()=>{
+            AddtoCard()
+          }}>
               Add to Cart
             </button>
             <br />
@@ -125,7 +127,7 @@ function ImageSection({ product }) {
         </div>
         <br />
         <div className="border-2 border-gray-800 p-4 rounded-md flex justify-center">
-          <button className="py-3 px-4 bg-success border-2 border-neutral w-9/12 rounded-md">
+          <button className="py-3 px-4 bg-success border-2 border-neutral w-9/12 rounded-md" >
             Add to Cart List
           </button>
         </div>

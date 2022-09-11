@@ -11,6 +11,7 @@ import CustomerPrivacyNotic from "./pages/Others/CustomerServicesAndHelp/Custome
 import CustomerServicesAndHelp from "./pages/Others/CustomerServicesAndHelp/CustomerServicesAndHelp";
 import University from "./pages/Others/university/index";
 import Vendor_Register from "./pages/Others/vendor_register/index";
+import ShopingCard from "./pages/ShopingCard/ShopingCard";
 import ShopPage from "./pages/ShopPage/ShopPage";
 import SinglePage from "./pages/SinglePage/SinglePage";
 import Navbar from "./shared/Navbar/Navbar";
@@ -45,6 +46,10 @@ function App() {
 
         <Route path="/login" element={<Login />} />
         <Route path="*" element={<NotFound />} />
+
+        {/* shoping card */}
+        <Route path="/card" element={<ShopingCard />} />
+
       </Routes>
     </div>
   );
