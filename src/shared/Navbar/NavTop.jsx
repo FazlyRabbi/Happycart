@@ -195,14 +195,16 @@ function Navtop({ openNav }) {
                 </div>
               </div>
 
+              <Link to="/card">
               <div className="flex  items-center cursor-pointer rounded-sm  border  border-primary hover:border-white p-1">
                 <span className="">
                   <AiOutlineShoppingCart className="lg:text-[2.6rem] md:text-[2.2rem]" />
                 </span>
-                <span className="font-bold lg:text-[12px] md:text-[10px] mt-2">
+              <span className="font-bold lg:text-[12px] md:text-[10px] mt-2">
                   Cart
                 </span>
               </div>
+              </Link>
             </div>
           </div>
         </div>
